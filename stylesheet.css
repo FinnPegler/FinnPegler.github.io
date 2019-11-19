@@ -10,22 +10,38 @@ body {
 }   
 
 #boxes-container {
-	background-color: white;
+	background-color: grey;
+	padding: 30px 0px;
+	margin: 100px auto;
 	width: 600px;
-	height: 400px;
+	height: 250px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+
 }
 
-#redbox {
+
+#box {
+  width: 40%;
+  height: 100%;
+}
+
+.red {
   background-color: #f20000;
-  width: 40%;
-  height: 100%;
 }
 
-#bluebox {
+.blue {
   background-color: blue;
-  width: 40%;
-  height: 100%;
 }
+
+.orange {
+  background-color: orange;
+}
+
+.cyan {
+	background-color: cyan;
+}
+
+
+
