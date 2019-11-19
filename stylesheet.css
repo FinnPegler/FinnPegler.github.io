@@ -1,14 +1,12 @@
 body {
-  background-color: #EBEBEB;
-  text-align: center;
-  color: #313030;
-  font-family: Arial, Helvetica, sans-serif;
+  	background-color: #EBEBEB;
+  	text-align: center;
+  	color: #313030;
+  	font-family: Arial, Helvetica, sans-serif;
 }
-  
   ol {
-  text-align: left;
+  	text-align: left;
 }   
-
 #boxes-container {
 	background-color: grey;
 	padding: 30px 0px;
@@ -20,33 +18,33 @@ body {
 	justify-content: space-around;
 
 }
-
 #box {
-  width: 40%;
-  height: 100%;
+  	width: 40%;
+  	height: 100%;
 }
-
 .red {
-  background-color: red;
+  	background-color: red;
 }
-
 .blue {
-  background-color: blue;
+  	background-color: blue;
 }
-
 .orange {
-  background-color: orange;
+  	background-color: orange;
 }
-
 .cyan {
 	background-color: cyan;
 }
-
 .topimages {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 800px;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  	max-width: 800px;
 }
-
+.imgcontainer {
+}
+.imgbutton {
+}
+.hidden {
+	display: none;
+}
