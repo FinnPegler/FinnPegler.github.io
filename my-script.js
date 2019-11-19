@@ -1,7 +1,5 @@
 const box = document.querySelectorAll("#box");
 
-
-
 function changeToOrange(event) {
 	event.target.classList.toggle("orange")
 };
@@ -11,12 +9,15 @@ for (var i = 0 ; i < box.length; i++){
 }
 
 function changeToCyan(event) {
-	event.target.classList = ("cyan")
+	event.target.classList.toggle("cyan")
 };
 
 for (var i = 0 ; i < box.length; i++){
 	box[i].addEventListener("mouseover", changeToCyan);
 }
+
+
+
 
 
 
