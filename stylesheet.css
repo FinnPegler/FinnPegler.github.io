@@ -8,3 +8,24 @@ body {
   ol {
   text-align: left;
 }   
+
+#boxes-container {
+	background-color: white;
+	width: 600px;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#redbox {
+  background-color: #f20000;
+  width: 40%;
+  height: 100%;
+}
+
+#bluebox {
+  background-color: blue;
+  width: 40%;
+  height: 100%;
+}
