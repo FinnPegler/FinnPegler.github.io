@@ -21,14 +21,13 @@ body {
 
 }
 
-
 #box {
   width: 40%;
   height: 100%;
 }
 
 .red {
-  background-color: #f20000;
+  background-color: red;
 }
 
 .blue {
@@ -42,6 +41,3 @@ body {
 .cyan {
 	background-color: cyan;
 }
-
-
-
