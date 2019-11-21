@@ -39,12 +39,10 @@ body {
   	margin-left: auto;
   	margin-right: auto;
   	width: 50%;
-  	max-width: 800px;
+  	max-width: 800px !important;
+  	max-height: 533px !important;
 }
-.imgcontainer {
-}
-.imgbutton {
-}
+
 .hidden {
 	display: none;
 }
