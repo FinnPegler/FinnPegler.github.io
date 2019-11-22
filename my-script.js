@@ -1,4 +1,3 @@
-
 //Task 1
 function changeToOrange(event) {
 	event.target.classList.toggle("orange")
@@ -34,11 +33,16 @@ img[0].addEventListener("click", clickImg);
 //Task 3
 
 function changeImg() {
-if (document.getElementById("carousel-image").src == "img1.jpg") 
+if (document.getElementById("carousel-image").src.includes("img1.jpg"))
 {
    	document.getElementById("carousel-image").src = "img2.jpg";
 } 
-else (document.getElementById("carousel-image").src == "img1.jpg") }
+
+else if (document.getElementById("carousel-image").src.includes("img2.jpg")) 
+{
+	document.getElementById("carousel-image").src = "img3.jpg";
+}
+else (document.getElementById("carousel-image").src = "img1.jpg") }
 
 document.getElementById("carousel-image").addEventListener("click", changeImg);
 
