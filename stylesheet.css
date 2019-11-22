@@ -38,11 +38,43 @@ body {
   	display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 50%;
-  	max-width: 800px;
+  	width: 100%;
+  	max-width: 600px;
 
 }
 
 .hidden {
 	display: none;
+}
+
+.button1{
+	background-color: #EBEBEB;
+	padding: 12px;
+	border: 1px solid #000000;
+	border-radius: 24px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.container {
+	border: 3px solid green;
+	position: relative;
+}
+
+.container img {
+	display: block;
+  	width: 100%;
+  	max-width: 800px;
+}
+
+.fwdbtn{
+	position: absolute;
+	top: 50%;
+    left: 80%;
+}
+
+.bckbtn{
+	position: absolute;
+	top: 50%;
+    left: 20%;
 }
