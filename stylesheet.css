@@ -82,3 +82,27 @@ body {
     left: 5%;
 }
 
+
+#playbtn{
+	background-color: #EBEBEB;
+	padding: 15px;
+	border: 1px solid #000000;
+	border-radius: 24px;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 80%;
+    left: 20%;
+}
+
+#playbtn2{
+	background-color: #EBEBEB;
+	padding: 15px;
+	border: 1px solid #000000;
+	border-radius: 24px;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 80%;
+    left: 55%;
+}

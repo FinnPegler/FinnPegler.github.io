@@ -77,8 +77,25 @@ else (document.getElementById("car-image").src = "img2.jpg") }
 document.getElementById("fwdbtn").addEventListener("click", changeImgFwd);
 document.getElementById("bckbtn").addEventListener("click", changeImgBck);
 
-
+//onkeydown function to move through images with arrow keys
 document.onkeydown = function (event){
     if (event.keyCode == "37"){changeImgBck()}
 	if (event.keyCode == "39"){changeImgFwd()}	
 }
+
+//Play button
+var x = null;
+function playImgs(){
+		x = setInterval(changeImgFwd, 2000)
+	}
+
+function pauseImgs(){
+	console.log("pause images called. x = "); console.log(x);
+		clearInterval(x);
+	}
+
+
+document.getElementById("playbtn").addEventListener("click", playImgs);
+document.getElementById("playbtn2").addEventListener("click", pauseImgs);
+
+
