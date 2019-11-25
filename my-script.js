@@ -76,3 +76,9 @@ else (document.getElementById("car-image").src = "img2.jpg") }
 
 document.getElementById("fwdbtn").addEventListener("click", changeImgFwd);
 document.getElementById("bckbtn").addEventListener("click", changeImgBck);
+
+
+document.onkeydown = function (event){
+    if (event.keyCode == "37"){changeImgBck()}
+	if (event.keyCode == "39"){changeImgFwd()}	
+}
