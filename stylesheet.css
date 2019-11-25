@@ -57,24 +57,28 @@ body {
 }
 
 .container {
-	border: 3px solid green;
-	position: relative;
+  position: relative;
+  width: auto;
+  max-width: 600px;
+  margin: auto;
 }
 
 .container img {
 	display: block;
   	width: 100%;
-  	max-width: 800px;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 .fwdbtn{
 	position: absolute;
-	top: 50%;
-    left: 80%;
+	top: 44%;
+    left: 88.5%;
 }
 
 .bckbtn{
 	position: absolute;
-	top: 50%;
-    left: 20%;
+	top: 44%;
+    left: 5%;
 }
+
