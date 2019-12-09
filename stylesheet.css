@@ -91,18 +91,24 @@ body {
 	font-size: 15px;
 	font-weight: bold;
 	position: absolute;
-	top: 80%;
-    left: 20%;
+	top: 85%;
+	/*left:30%;*/
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
 }
 
-#playbtn2{
-	background-color: #EBEBEB;
-	padding: 15px;
-	border: 1px solid #000000;
-	border-radius: 24px;
-	font-size: 15px;
-	font-weight: bold;
+#smallbuttons{
 	position: absolute;
-	top: 80%;
-    left: 55%;
+	display: block;
+	top: 90%;
+	margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.smallbtn{
+	position: absolute;
+    margin-left: auto;
+    margin-right: auto;
 }

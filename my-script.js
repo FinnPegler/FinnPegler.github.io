@@ -83,19 +83,20 @@ document.onkeydown = function (event){
 	if (event.keyCode == "39"){changeImgFwd()}	
 }
 
-//Play button
 var x = null;
+var count = 0
 function playImgs(){
-		x = setInterval(changeImgFwd, 2000)
+	if (count <1 ){
+		x = setInterval(changeImgFwd, 1000);
+		count += 1;
 	}
-
-function pauseImgs(){
-	console.log("pause images called. x = "); console.log(x);
+	else {
 		clearInterval(x);
+		count -= 1;
 	}
-
+}
 
 document.getElementById("playbtn").addEventListener("click", playImgs);
-document.getElementById("playbtn2").addEventListener("click", pauseImgs);
+
 
 
