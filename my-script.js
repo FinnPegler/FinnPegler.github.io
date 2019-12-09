@@ -84,7 +84,7 @@ document.onkeydown = function (event){
 }
 
 var x = null;
-var count = 0
+var count = 0;
 function playImgs(){
 	if (count <1 ){
 		x = setInterval(changeImgFwd, 1000);

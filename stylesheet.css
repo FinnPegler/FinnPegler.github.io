@@ -72,14 +72,16 @@ body {
 
 .fwdbtn{
 	position: absolute;
-	top: 44%;
-    left: 88.5%;
+	top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
 
 .bckbtn{
 	position: absolute;
-	top: 44%;
-    left: 5%;
+	top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -92,7 +94,6 @@ body {
 	font-weight: bold;
 	position: absolute;
 	top: 85%;
-	/*left:30%;*/
     margin-left: auto;
     margin-right: auto;
     transform: translate(-50%, -50%);
@@ -100,15 +101,32 @@ body {
 
 #smallbuttons{
 	position: absolute;
-	display: block;
-	top: 90%;
+	width: 100%;
+	top: 92.5%;
 	margin-left: auto;
     margin-right: auto;
     
 }
 
 .smallbtn{
-	position: absolute;
+	display: inline;
     margin-left: auto;
     margin-right: auto;
+    padding: 6px;
+    margin: 4px;
+	border-radius: 24px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.smallbtndark{
+	background-color: #404040;
+	display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4px;
+    padding: 6px;
+	border-radius: 24px;
+	font-size: 15px;
+	font-weight: bold;
 }
