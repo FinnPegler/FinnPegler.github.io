@@ -102,20 +102,21 @@ body {
 #smallbuttons{
 	position: absolute;
 	width: 100%;
-	top: 92.5%;
+	top: 91.5%;
 	margin-left: auto;
     margin-right: auto;
     
 }
 
 .smallbtn{
+	background-color: #EBEBEB;
 	display: inline;
     margin-left: auto;
     margin-right: auto;
     padding: 6px;
-    margin: 4px;
-	border-radius: 24px;
-	font-size: 15px;
+    margin: 2px;
+	border-radius: 12px;
+	font-size: 2px;
 	font-weight: bold;
 }
 
@@ -124,9 +125,9 @@ body {
 	display: inline;
     margin-left: auto;
     margin-right: auto;
-    margin: 4px;
     padding: 6px;
-	border-radius: 24px;
-	font-size: 15px;
+ 	margin: 2px;
+	border-radius: 12px;
+	font-size: 2px;
 	font-weight: bold;
 }

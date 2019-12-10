@@ -52,26 +52,41 @@ function changeImgFwd() {
 if (document.getElementById("car-image").src.includes("img1.jpg"))
 {
    	document.getElementById("car-image").src = "img2.jpg";
+   	document.getElementById("circle1").className = "smallbtn";
+   	document.getElementById("circle2").className = "smallbtndark";
 } 
 
 else if (document.getElementById("car-image").src.includes("img2.jpg")) 
 {
 	document.getElementById("car-image").src = "img3.jpg";
+	document.getElementById("circle2").className = "smallbtn";
+   	document.getElementById("circle3").className = "smallbtndark";
 }
-else (document.getElementById("car-image").src = "img1.jpg") }
+else {document.getElementById("car-image").src = "img1.jpg";
+	document.getElementById("circle3").className = "smallbtn";
+   	document.getElementById("circle1").className = "smallbtndark";} 
+}
 
 
 function changeImgBck() {
 if (document.getElementById("car-image").src.includes("img1.jpg"))
 {
    	document.getElementById("car-image").src = "img3.jpg";
+   	document.getElementById("circle1").className = "smallbtn";
+   	document.getElementById("circle3").className = "smallbtndark";
 } 
 
 else if (document.getElementById("car-image").src.includes("img2.jpg")) 
 {
 	document.getElementById("car-image").src = "img1.jpg";
+	document.getElementById("circle2").className = "smallbtn";
+   	document.getElementById("circle1").className = "smallbtndark";
 }
-else (document.getElementById("car-image").src = "img2.jpg") }
+else {document.getElementById("car-image").src = "img2.jpg";
+	  	document.getElementById("circle3").className = "smallbtn";
+   		document.getElementById("circle2").className = "smallbtndark";
+      } 
+}
 
 
 document.getElementById("fwdbtn").addEventListener("click", changeImgFwd);
