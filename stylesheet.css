@@ -24,9 +24,20 @@ body {
 }
 
 #profile{
-	margin-bottom: 60px;
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
+
+#profile div{
+	max-width: 300px;
+}
+
+#profile img{
+	margin-bottom: 60px;
+}
+
+
 
 .column{
   width: 600px;
