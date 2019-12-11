@@ -11,18 +11,36 @@ body {
 
 }
   
+.navitem{
+  position: relative;
+  float: left;
+  top: -90px; 
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+
+}
+
+#profile{
+	margin-bottom: 60px;
+	float: left;
+}
 
 .column{
   width: 600px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   padding: 50px;
   border-radius: 30px;
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
   text-align: center;
   color: white;
 }
+
+
 
 #boxes-container {
 	background-color: grey;
