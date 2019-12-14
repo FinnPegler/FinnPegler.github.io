@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("bg.jpg"); 
+    background-color: #a8D0e6;
     background-repeat:no-repeat; 
     background-size: cover;
     background-attachment: fixed;
@@ -34,8 +34,8 @@ a:active {
 .column{
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  background: rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.05);
   padding: 50px;
   border-radius: 30px;
   margin: auto;
@@ -94,11 +94,26 @@ a:active {
 	border-radius: 500px;
 }
 
-#carousel {
-	display: flex;
-	flex-direction: column;
+#twocolumns {
+  display: flex;
+  justify-content: space-between;
 }
 
+#col1 {
+  background-color: #f76c6c;
+  padding: 5px;
+  width: 45%;
+}
+
+#col2 {
+  background-color: #374785;
+  padding: 5px;
+  width: 45%;
+}
+
+#carousel {
+	flex-direction: column;
+}
 
 #boxes-container {
 	background-color: grey;
@@ -166,7 +181,7 @@ a:active {
 .container {
   position: relative;
   width: auto;
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
 }
 
