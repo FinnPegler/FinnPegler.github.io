@@ -2,12 +2,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #a8D0e6;
-    background-repeat:no-repeat; 
+    /*background-repeat:no-repeat; 
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
   	text-align: center;
-  	color: #ffffff;
   	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+  color: #24305e;
+}
+
+h1,h2,h3,h4 {
+  color: #24305e;
 }
 
 html {
@@ -16,11 +24,11 @@ html {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: #24305e;
 }
 a:visited {
     text-decoration: none;
-    color: white;
+    color: #24305e;
 }
 a:hover {
     text-decoration: none;
@@ -28,7 +36,7 @@ a:hover {
 }
 a:active {
     text-decoration: none;
-    color: white;
+    color: #24305e;
 }
 
 .column{
@@ -52,7 +60,8 @@ a:active {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.9);
+  background: #f8e9A1;
+  color: #24305e;
 }
 
 #nav {
@@ -63,12 +72,14 @@ a:active {
 .currentnavitem{
   position: relative;
   float: left;
-  top: -92px; 
+  top: -96px; 
   width: 100px;
-  height: 42px;
+  height: 46px;
   border-radius: 10px;
-  background: rgba(34, 139, 34);
-
+  background: #82E18E;
+  color: #24305e;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .navitem a {
@@ -76,13 +87,14 @@ a:active {
 }
 
 .currentnavitem a {
-  line-height:42px;
+  line-height:46px;
 }
 
 #profile{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #profile div{
@@ -90,25 +102,45 @@ a:active {
 }
 
 #profile img{
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 	border-radius: 500px;
 }
 
-#twocolumns {
+.intro {
+  min-width: 280px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#threecolumns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #col1 {
   background-color: #f76c6c;
   padding: 5px;
-  width: 45%;
+  width: 29%;
+  min-width: 150px; 
+  margin-bottom: 40px;
 }
 
 #col2 {
-  background-color: #374785;
+  background-color: #82E18E;
   padding: 5px;
-  width: 45%;
+  width: 29%;
+  min-width: 150px; 
+  margin-bottom: 40px;
+}
+
+#col3 {
+  background-color: #f8e9A1;
+  padding: 5px;
+  width: 29%;
+  min-width: 150px; 
+  margin-bottom: 40px;
 }
 
 #carousel {
@@ -209,10 +241,10 @@ a:active {
 
 #playbtn{
 	background-color: #EBEBEB;
-	padding: 8px;
+	padding: 9px;
 	border: 1px solid #000000;
 	border-radius: 24px;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	position: absolute;
 	top: 85%;
@@ -223,21 +255,18 @@ a:active {
 
  @media only screen and (max-width: 650px) {
   #playbtn{
-  padding: 8px;
-  font-size: 12px;
+  padding: 6px;
+  font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 475px) {
   #playbtn{
-  padding: 5px;
-  font-size: 8px;
+  padding: 3px;
+  font-size: 16px;
   top: 90%;
   }
 }
-
-
-
 
 #smallbuttons{
 	position: absolute;
