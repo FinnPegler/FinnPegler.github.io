@@ -86,3 +86,4 @@ function centerBoxes() {
 }
 
 window.onresize = centerBoxes;
+window.onload = centerBoxes;
