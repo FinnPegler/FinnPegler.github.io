@@ -61,7 +61,25 @@ function playImgs(){
 	}
 }
 
+var count2 = 0;
+function changeColour(){
+	if (count2 <1 ){
+		document.getElementById("playbtn").style.opacity = 0.2;
+		document.getElementById("pausebtn").style.opacity = 1;
+		count2 += 1;
+	}
+	else {
+		document.getElementById("playbtn").style.opacity = 1;
+		document.getElementById("pausebtn").style.opacity = 0.2;
+		count2 -= 1;
+	}
+}
+
 document.getElementById("playbtn").addEventListener("click", playImgs);
+document.getElementById("pausebtn").addEventListener("click", playImgs);
+document.getElementById("playbtn").addEventListener("click", changeColour);
+document.getElementById("pausebtn").addEventListener("click", changeColour);
+
 
 
 function centerBoxes() {
