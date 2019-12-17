@@ -74,14 +74,11 @@ function centerBoxes() {
     
     if (width1 < width2*2 ) {
        document.getElementById("threecolumns").className = "columnscenter";
-       console.log("small");
     } else if (width1 < width2*3 ) {
-       document.getElementById("threecolumns").className = "columnsaround";
-       console.log("medium");   
+       document.getElementById("threecolumns").className = "columnsaround"; 
 
     } else {
        document.getElementById("threecolumns").className = "threecolumns";
-        console.log("big");
     }
 }
 

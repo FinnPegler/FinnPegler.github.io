@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #a8D0e6;
-    /*background-repeat:no-repeat; 
-    background-size: cover;
-    background-attachment: fixed;*/
+    background-color: #ffffff;
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
   	text-align: center;
   	font-family: Arial, Helvetica, sans-serif;
 
@@ -228,7 +228,7 @@ a:active {
 
 #playbtn{
 	background-color: #EBEBEB;
-	padding: 9px;
+	padding: 12px;
 	border: 1px solid #000000;
 	border-radius: 24px;
 	font-size: 16px;
@@ -242,23 +242,29 @@ a:active {
 
  @media only screen and (max-width: 650px) {
   #playbtn{
-  padding: 6px;
-  font-size: 16px;
+  padding: 10px;
   }
 }
 
 @media only screen and (max-width: 475px) {
   #playbtn{
-  padding: 3px;
-  font-size: 16px;
+  padding: 8px;
   top: 90%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #playbtn{
+  padding: 8px;
+  top: 85%;
+  font-size: 10px;
   }
 }
 
 #smallbuttons{
 	position: absolute;
 	width: 100%;
-	top: 90%;
+	top: 91%;
 	margin-left: auto;
   margin-right: auto;   
 }
