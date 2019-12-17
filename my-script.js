@@ -1,6 +1,3 @@
-
-
-//Task 5
 function changeImgFwd() {
 if (document.getElementById("car-image").src.includes("img1.jpg"))
 {
@@ -67,4 +64,25 @@ function playImgs(){
 document.getElementById("playbtn").addEventListener("click", playImgs);
 
 
+function centerBoxes() {
+	let elem1 = document.getElementById("threecolumns");
+	let info1 = elem1.getBoundingClientRect();
+	let width1 = info1.width;
+	let elem2 = document.getElementById("col1");
+	let info2 = elem2.getBoundingClientRect();
+	let width2 = info2.width;
+    
+    if (width1 < width2*2 ) {
+       document.getElementById("threecolumns").className = "columnscenter";
+       console.log("small");
+    } else if (width1 < width2*3 ) {
+       document.getElementById("threecolumns").className = "columnsaround";
+       console.log("medium");   
 
+    } else {
+       document.getElementById("threecolumns").className = "threecolumns";
+        console.log("big");
+    }
+}
+
+window.onresize = centerBoxes;

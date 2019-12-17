@@ -76,7 +76,7 @@ a:active {
   width: 100px;
   height: 46px;
   border-radius: 10px;
-  background: #82E18E;
+  background: #4FAD7C;
   color: #24305e;
   font-weight: bold;
   font-size: 18px;
@@ -119,20 +119,34 @@ a:active {
   flex-wrap: wrap;
 }
 
+.threecolumns {
+  justify-content: space-between !important;
+}
+
+.columnsaround {
+  justify-content: space-around !important;
+}
+
+.columnscenter {
+  justify-content: center !important;
+}
+
 #col1 {
   background-color: #f76c6c;
   padding: 5px;
   width: 29%;
   min-width: 150px; 
   margin-bottom: 40px;
+  border-radius: 30px;
 }
 
 #col2 {
-  background-color: #82E18E;
+  background-color: #4FAD7C;
   padding: 5px;
   width: 29%;
   min-width: 150px; 
   margin-bottom: 40px;
+  border-radius: 30px;
 }
 
 #col3 {
@@ -141,39 +155,13 @@ a:active {
   width: 29%;
   min-width: 150px; 
   margin-bottom: 40px;
+  border-radius: 30px;
 }
 
 #carousel {
 	flex-direction: column;
 }
 
-#boxes-container {
-	background-color: grey;
-	padding: 30px 0px;
-	margin: 50px auto;
-	width: 600px;
-	height: 250px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-
-}
-#box {
-  	width: 40%;
-  	height: 100%;
-}
-.red {
-  	background-color: red;
-}
-.blue {
-  	background-color: blue;
-}
-.orange {
-  	background-color: orange;
-}
-.cyan {
-	background-color: cyan;
-}
 .topimages {
   	display: block;
   	margin-left: auto;
@@ -238,7 +226,6 @@ a:active {
     transform: translate(-50%, -50%);
 }
 
-
 #playbtn{
 	background-color: #EBEBEB;
 	padding: 9px;
@@ -273,8 +260,7 @@ a:active {
 	width: 100%;
 	top: 90%;
 	margin-left: auto;
-  margin-right: auto;
-    
+  margin-right: auto;   
 }
 
 .smallbtn{
