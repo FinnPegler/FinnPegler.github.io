@@ -33,7 +33,7 @@ hr {
   border: 0;
   clear:both;
   display:block;
-  width: 96%;               
+  width: 90%;               
   background-color:#4b60b4;
   height: 2px;
 }
@@ -42,6 +42,11 @@ a:link {
     text-decoration: none;
     color: #24305e;
 }
+
+#nav a:link {
+  color: white;
+}
+
 a:visited {
     text-decoration: none;
     color: #24305e;
@@ -74,17 +79,7 @@ a:active {
   display: inherit;
 }
 
-#colourchange {
-  float: right;
-  background-color: #4b60b4;
-  width: 120px;
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 5px 10px 5px 10px;
-}
+
 
 .column{
   display: flex;
@@ -99,44 +94,43 @@ a:active {
   text-align: center;
   color: white;
 }
-  
-.navitem{
-  position: relative;
-  float: left;
-  top: -90px; 
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  background: #f8e9A1;
-  color: #24305e;
-  font-size: 24px;
+
+.columndark{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 15%;
+  margin-bottom: 8%;
+  text-align: center;
+  color: white;
 }
+  
 
 #nav {
 	display: flex;
 	flex-direction: row; 
 }
 
-.currentnavitem{
+.navitem{
   position: relative;
   float: left;
   top: -96px; 
-  width: 150px;
+  width: 180px;
   height: 46px;
   border-radius: 10px;
-  background: #4FAD7C;
-  color: #24305e;
+  background: #4b60b4;
   font-weight: bold;
   font-size: 30px;
-}
-
-.navitem a {
-  line-height:40px;
-}
-
-.currentnavitem a {
+  color: white;
   line-height:46px;
+  margin: 0px 5px 0px 5px;
 }
+
+
 
 #profile{
 	display: flex;
@@ -206,6 +200,15 @@ a:active {
 
 #col3 {
   background-color: #f8e9A1;
+  padding: 5px;
+  width: 29%;
+  min-width: 150px; 
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+#col3dark {
+  background-color: #ee4540;
   padding: 5px;
   width: 29%;
   min-width: 150px; 
@@ -312,6 +315,17 @@ a:active {
   border-radius: 6px;
 }
 
+
+#colourchange {
+  background-color: #4b60b4;
+  width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 10px 5px 10px;
+}
 
 #contact{
   display: flex;

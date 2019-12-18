@@ -3,20 +3,29 @@ let count3 = 0;
 function changeColour() {
 	if (count3 < 1){
  document.body.style.backgroundImage = "url('bg2.png')";
+ document.getElementsByClassName("column")[0].className = "columndark";
  document.getElementById("colourchange").innerText = "Light Mode";
+ document.getElementById("col3").id = "col3dark";
+ //console.log("dark")
  let pelem = document.getElementsByTagName("p");
- for (var i = 0; i < pelem.length; i++) {
-    pelem[i].style.color = "white";
-}
- //console.log("test")
+ 	for (var i = 0; i < pelem.length; i++) {
+    pelem[i].style.color = "#F0F0F0";
+	}  
 count3 ++;
 }
 
 else {
 	document.body.style.backgroundImage = "url('bg.png')";
+	document.getElementsByClassName("columndark")[0].className = "column";
 	document.getElementById("colourchange").innerText = "Dark Mode";
-	count3 --;
+	document.getElementById("col3dark").id = "col3";
+	let pelem = document.getElementsByTagName("p");
+		for (var i = 0; i < pelem.length; i++) {
+    pelem[i].style.color = "#24305e";
+		}
+		count3--;
 }
+
 }
 
 document.getElementById("colourchange").addEventListener("click", changeColour);
