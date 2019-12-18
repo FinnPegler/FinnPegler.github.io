@@ -74,6 +74,18 @@ a:active {
   display: inherit;
 }
 
+#colourchange {
+  float: right;
+  background-color: #4b60b4;
+  width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 10px 5px 10px;
+}
+
 .column{
   display: flex;
   flex-direction: column;
@@ -249,7 +261,7 @@ a:active {
 	border-radius: 12px;
 	font-size: 16px;
 	font-weight: bold;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 #pausebtn{
@@ -259,7 +271,7 @@ a:active {
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 0px 20px;
   opacity: 0.2;
 }
 
@@ -275,7 +287,8 @@ a:active {
 #smallbuttons{
 	width: 100%;
 	margin-left: auto;
-  margin-right: auto;   
+  margin-right: auto;
+  margin: 20px 0px 20px 0px;   
 }
 
 .smallbtn{
@@ -315,11 +328,11 @@ a:active {
 }
 
 
+
 #contactright{
   display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start !important;
+  align-items: flex-start;
 }
 
 #email {

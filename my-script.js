@@ -1,3 +1,33 @@
+//change colour scheme
+let count3 = 0;
+function changeColour() {
+	if (count3 < 1){
+ document.body.style.backgroundImage = "url('bg2.png')";
+ document.getElementById("colourchange").innerText = "Light Mode";
+ let pelem = document.getElementsByTagName("p");
+ for (var i = 0; i < pelem.length; i++) {
+    pelem[i].style.color = "white";
+}
+ //console.log("test")
+count3 ++;
+}
+
+else {
+	document.body.style.backgroundImage = "url('bg.png')";
+	document.getElementById("colourchange").innerText = "Dark Mode";
+	count3 --;
+}
+}
+
+document.getElementById("colourchange").addEventListener("click", changeColour);
+
+
+
+
+
+
+
+
 //Hide and show icon in first column (Github)
 function hideIcon1() {
   document.getElementById("icon1").className = "hidden";
