@@ -1,3 +1,54 @@
+//popup
+document.onload = popupdelay()
+
+function changepopup(){
+	document.getElementById("popup").className = "shown";
+}
+function popupdelay(){
+	let milliseconds = setTimeout(changepopup, 1500000)
+}
+
+function exitpopup (){
+document.getElementById("popup").className = "hidden";
+}
+
+document.getElementById("exit").addEventListener("click", exitpopup);
+
+//create string
+let str = ""
+count4 = 0;
+function addToString () {
+console.log(str);
+if (count4 == 1){str = ""; count4 --; return str}
+if (str.length == 0){str = str.concat("c"); return str}
+if (str.length == 1){str = str.concat("r"); return str}
+if (str.length == 2){str = str.concat("e"); return str}
+if (str.length == 3){str = str.concat("a"); return str}
+if (str.length == 4){str = str.concat("t"); return str}
+if (str.length == 5){str = str.concat("e"); return str}
+if (str.length == 6){str = str.concat("d"); return str}
+if (str.length == 7||str.length == 8){str = str.concat("."); return str}
+//if (){str = str.concat("."); return str}
+if (str.length == 9){str = str.concat("."); count4++; return str}
+}
+
+function strDelay(str){
+  let milliseconds = setInterval(addToString, 200, str)
+}
+
+//insert String into HTML
+function insertStr(){
+  document.getElementById("insert").innerHTML = str;
+}
+
+function insertDelay(){
+  let milliseconds = setInterval(insertStr, 201)
+}
+
+document.onload = strDelay();
+document.onload = insertDelay();
+
+
 //change colour scheme
 let count3 = 0;
 function changeColour() {
@@ -31,18 +82,15 @@ else {
 document.getElementById("colourchange").addEventListener("click", changeColour);
 
 
-
-
-
-
-
-
 //Hide and show icon in first column (Github)
 function hideIcon1() {
   document.getElementById("icon1").className = "hidden";
+  document.getElementById("col1h2").className = "shown";
+
 }
 function showIcon1() {
   document.getElementById("icon1").className = "shown";
+  document.getElementById("col1h2").className = "hidden";
 }
 document.getElementById("col1").addEventListener("mouseleave", hideIcon1);
 document.getElementById("col1").addEventListener("mouseenter", showIcon1);
@@ -51,9 +99,11 @@ document.getElementById("col1").addEventListener("mouseenter", showIcon1);
 //Hide and show icon in second column (Freecodecamp)
 function hideIcon2() {
   document.getElementById("icon2").className = "hidden";
+  document.getElementById("col2h2").className = "shown";
 }
 function showIcon2() {
   document.getElementById("icon2").className = "shown";
+  document.getElementById("col2h2").className = "hidden";
 }
 document.getElementById("col2").addEventListener("mouseleave", hideIcon2);
 document.getElementById("col2").addEventListener("mouseenter", showIcon2);
@@ -62,9 +112,11 @@ document.getElementById("col2").addEventListener("mouseenter", showIcon2);
 //Hide and show icon in first column (Codewars)
 function hideIcon3() {
   document.getElementById("icon3").className = "hidden";
+  document.getElementById("col3h2").className = "shown";
 }
 function showIcon3() {
   document.getElementById("icon3").className = "shown";
+  document.getElementById("col3h2").className = "hidden";
 }
 document.getElementById("col3").addEventListener("mouseleave", hideIcon3);
 document.getElementById("col3").addEventListener("mouseenter", showIcon3);

@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div id = "popup" class = "hidden"><h3>Popup Test Box</h3><input type="type" name="Name"><button id = "exit">Exit</button></div>
+
+
 <div class="column">
   <div id = nav>
     <a href = "index.html"><div class = "navitem">Home</div></a>
@@ -38,21 +41,22 @@
 
 
   <div id = threecolumns>
+
+
+
     <div id = "col1">
-      <h2>Github Repo</h2> 
-      <p>Link to Repo for this page can be found <a target = "blank"  href="https://github.com/FinnPegler/FinnPegler.github.io"><strong>here.</strong></a></p>
-      <div id = "icon1" class = "hidden"><a target = "blank"  href="https://github.com/FinnPegler/FinnPegler.github.io"><iconify-icon id = "icon1" data-icon="ant-design:github-fill" style="color: #4b60b4;" data-width="128" data-height="128"></iconify-icon><p>53 Contributions<br>in 2019</p></a></div>
+      <h2 id = "col1h2">Github Repo</h2>
+      <div id = "icon1" class = "hidden"><a target = "blank"  href="https://github.com/FinnPegler/FinnPegler.github.io"><iconify-icon id = "icon1" data-icon="ant-design:github-fill" style="color: #4b60b4;" data-width="128" data-height="128"></iconify-icon><p>53 Contributions<br>in 2019</p></a></div> 
+ 
     </div>
     
     <div id = "col2">
-      <h2>Free Code Camp</h2> 
-      <p>Link to my freeCodeCamp profile can be found <a target = "blank" href="https://www.freecodecamp.org/finnpegler"><strong>here.</strong></a></p>
+      <h2 id = "col2h2">Free Code Camp</h2> 
       <div id = "icon2" class = "hidden"><a target = "blank"  href="https://www.freecodecamp.org/finnpegler"><iconify-icon data-icon="fa-free-code-camp" style="color: #4b60b4;" data-width="128" data-height="128"></iconify-icon><p>300 Points</p></a></div>
     </div> 
 
     <div id = "col3">
-      <h2>CodeWars</h2> 
-      <p>Link to my Codewars profile can be found <a target = "blank" href="https://www.codewars.com/users/FinnPegler"><strong>here.</strong></a></p>
+      <h2 id = "col3h2">CodeWars</h2> 
       <div id = "icon3" class = "hidden"><a target = "blank" href="https://www.codewars.com/users/FinnPegler"><iconify-icon data-icon="simple-icons:codewars" style="color: #4b60b4;"data-width="115" data-height="115"></iconify-icon><p>4 Kyu<br>533 Honor</p></a></div>
     </div> 
   </div>
@@ -77,8 +81,15 @@
   </div>
 </div>
 
-
-<hr>
+<div id = "videocontainer">
+  
+<video id = "video" autoplay="autoplay" controls = "controls" loop="loop" muted width="640" height="360">
+<source src="coding.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+    </video>
+    <h3 id = "videoheading">Embedded video of this</h3>
+    <h3 id = "videoheading2">website being <span id = "insert"></span></h3>
+</div>
 
 <h2><span class = highlight>Contact</span></h2>
 
