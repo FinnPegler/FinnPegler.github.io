@@ -28,6 +28,16 @@ html {
   scroll-behavior: smooth;
 }
 
+hr {
+  margin: 50px 0px 30px 0px;
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#4b60b4;
+  height: 2px;
+}
+
 a:link {
     text-decoration: none;
     color: #24305e;
@@ -82,11 +92,12 @@ a:active {
   position: relative;
   float: left;
   top: -90px; 
-  width: 100px;
+  width: 150px;
   height: 40px;
   border-radius: 10px;
   background: #f8e9A1;
   color: #24305e;
+  font-size: 24px;
 }
 
 #nav {
@@ -98,13 +109,13 @@ a:active {
   position: relative;
   float: left;
   top: -96px; 
-  width: 100px;
+  width: 150px;
   height: 46px;
   border-radius: 10px;
   background: #4FAD7C;
   color: #24305e;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .navitem a {
@@ -292,7 +303,7 @@ a:active {
 #contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -303,9 +314,26 @@ a:active {
   margin: 0px 20px 0px 20px;
 }
 
+
 #contactright{
-  max-width: 370px;
-  margin: 0px 20px 0px 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start !important;
 }
 
+#email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
