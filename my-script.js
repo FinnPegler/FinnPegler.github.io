@@ -5,7 +5,7 @@ function changepopup(){
 	document.getElementById("popup").className = "shown";
 }
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 20000)
+	let milliseconds = setTimeout(changepopup, 10000)
 }
 
 function exitpopup (){
@@ -69,9 +69,6 @@ document.getElementById("pausevid").addEventListener("click", changeVidButton);
 
 document.getElementById("playvid").addEventListener("click", insertDelay);
 document.getElementById("playvid").addEventListener("click", changeVidButton2);
-
-
-
 
 
 //change colour scheme of website

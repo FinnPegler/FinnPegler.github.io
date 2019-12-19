@@ -7,7 +7,6 @@ body {
     background-attachment: fixed;
   	text-align: center;
   	font-family: Arial, Helvetica, sans-serif;
-
 }
 
 p {
@@ -85,10 +84,39 @@ a:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:300px;
-  height: 200px;
-  background-color: grey;
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid grey;
+  font-size: 24px;
+  background-image: url("bg.png");
+  background-repeat: repeat;
 }
+
+@media only screen and (max-width: 600px) {
+  #popup {
+    display: none;
+  }
+}
+
+#exit {
+ position: absolute;
+ float:right; 
+ left: 360px;
+ top: 40px;
+ transform: translate(-50%, -50%);
+ vertical-align: top
+}
+
+#popupcopy{
+  color: #24305e;
+  font-size: 22px;
+  margin: 30px 30px 30px 30px;
+}
+
+
+
 
 .column{
   display: flex;
