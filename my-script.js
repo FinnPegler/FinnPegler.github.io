@@ -12,7 +12,7 @@ function exitpopup (){
 document.getElementById("popup").className = "hidden";
 }
 
-document.getElementById("exit").addEventListener("click", exitpopup);
+document.getElementById("exit").addEventListener("click", exitpopup);S
 
 //functions to create the video caption animation
 let str = ""
