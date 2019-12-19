@@ -93,7 +93,7 @@ a:active {
 .column{
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 800px;
   background: rgba(255, 255, 255, 0.35);
   padding: 50px;
   border-radius: 30px;
@@ -327,12 +327,13 @@ a:active {
 #videocontainer {
   position: relative;
   width: min-content;
-  margin: auto;
+  margin: 30px auto 30px auto;
+
 }
 
 
 #video {
-  opacity: 0.4;
+  opacity: 0.5;
   margin: auto;
   z-index: -1;
 }
@@ -361,6 +362,28 @@ a:active {
 #colourchange {
   background-color: #4b60b4;
   width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 10px 5px 10px;
+}
+
+#pausevid {
+  background-color: #f76c6c;
+  width: 150px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 10px 5px 10px;
+}
+
+#playvid {
+  background-color: #f76c6c;
+  width: 150px;
   padding: 12px;
   border-radius: 10px;
   font-size: 14px;

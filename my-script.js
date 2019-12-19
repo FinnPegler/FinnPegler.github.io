@@ -5,7 +5,7 @@ function changepopup(){
 	document.getElementById("popup").className = "shown";
 }
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 1500000)
+	let milliseconds = setTimeout(changepopup, 20000)
 }
 
 function exitpopup (){
@@ -14,11 +14,10 @@ document.getElementById("popup").className = "hidden";
 
 document.getElementById("exit").addEventListener("click", exitpopup);
 
-//create string
+//functions to create the video caption animation
 let str = ""
 count4 = 0;
 function addToString () {
-console.log(str);
 if (count4 == 1){str = ""; count4 --; return str}
 if (str.length == 0){str = str.concat("c"); return str}
 if (str.length == 1){str = str.concat("r"); return str}
@@ -33,7 +32,7 @@ if (str.length == 9){str = str.concat("."); count4++; return str}
 }
 
 function strDelay(str){
-  let milliseconds = setInterval(addToString, 200, str)
+  milliseconds = setInterval(addToString, 200, str)
 }
 
 //insert String into HTML
@@ -42,14 +41,40 @@ function insertStr(){
 }
 
 function insertDelay(){
-  let milliseconds = setInterval(insertStr, 201)
+  milliseconds2 = setInterval(insertStr, 201)
 }
 
 document.onload = strDelay();
 document.onload = insertDelay();
 
+//button to stop animation
+var count5 = 0;
+var y = null;
+function stopInsertDelay(){
+		clearInterval(milliseconds2);
+	}
 
-//change colour scheme
+function changeVidButton () {
+	document.getElementById("pausevid").className = "hidden";
+	document.getElementById("playvid").className = "shown";
+}
+
+function changeVidButton2 () {
+	document.getElementById("playvid").className = "hidden";
+	document.getElementById("pausevid").className = "shown";
+}
+
+document.getElementById("pausevid").addEventListener("click", stopInsertDelay);
+document.getElementById("pausevid").addEventListener("click", changeVidButton);
+
+document.getElementById("playvid").addEventListener("click", insertDelay);
+document.getElementById("playvid").addEventListener("click", changeVidButton2);
+
+
+
+
+
+//change colour scheme of website
 let count3 = 0;
 function changeColour() {
 	if (count3 < 1){
