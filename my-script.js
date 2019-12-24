@@ -4,8 +4,9 @@ document.onload = popupdelay()
 function changepopup(){
 	document.getElementById("popup").className = "shown";
 }
+
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 10000)
+	let milliseconds = setTimeout(changepopup, 1000)
 }
 
 function exitpopup (){
@@ -13,6 +14,23 @@ document.getElementById("popup").className = "hidden";
 }
 
 document.getElementById("exit").addEventListener("click", exitpopup);
+
+//Expand/hide mobile menu
+let count6 = 0;
+function mobnav(){
+	if (count6 <1 ){
+		document.getElementById("mobnavhidden").id = "mobnavshown";
+		console.log("yes")
+		count6 += 1;
+	}
+	else {
+		document.getElementById("mobnavshown").id = "mobnavhidden";
+		count6 -= 1;
+	}
+}
+
+document.getElementById("mobnavbutton").addEventListener("click", mobnav);
+
 
 //functions to create the video caption animation
 let str = ""

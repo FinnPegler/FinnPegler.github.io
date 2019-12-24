@@ -9,6 +9,15 @@ body {
   	font-family: Arial, Helvetica, sans-serif;
 }
 
+#overlay { 
+    position: absolute;
+    height: 100vh; 
+    width: 100vw; 
+    background-color: black; 
+    opacity: 1; 
+    z-index: 100;
+} 
+
 p {
   color: #24305e;
   font-size: 22px;
@@ -90,8 +99,7 @@ a:active {
   border-radius: 30px;
   border: 3px solid grey;
   font-size: 24px;
-  background-image: url("bg.png");
-  background-repeat: repeat;
+  z-index: 9;
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,6 +125,19 @@ a:active {
 
 
 
+#colourchange {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #4b60b4;
+  width: 100px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 10px 5px 10px;
+}
 
 .column{
   display: flex;
@@ -153,6 +174,40 @@ a:active {
   flex-wrap: wrap;
 }
 
+#mobnavbutton {
+position: absolute;
+left:10px;
+top: 15px;
+background-color: rgb(0, 0, 0, 0);
+border: none;
+}
+
+#mobnavhidden{
+  display: none;
+}
+
+#mobnavshown {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  display: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 800px) {
+  #nav {
+    display: none;
+  }
+
+  #colourchange {
+    right: 5px;
+    top: 5px;
+  }
+}
+
 .navitem{
   position: relative;
   float: left;
@@ -168,7 +223,17 @@ a:active {
   margin: 0px 5px 0px 5px;
 }
 
-
+.mobilenavitem{ 
+  width: 180px;
+  height: 46px;
+  border-radius: 10px;
+  background: #4b60b4;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  line-height:46px;
+  margin: 2px 5px 0px 5px;
+}
 
 #profile{
 	display: flex;
@@ -419,16 +484,6 @@ a:active {
 }
 
 
-#colourchange {
-  background-color: #4b60b4;
-  width: 120px;
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 5px 10px 5px 10px;
-}
 
 #pausevid {
   background-color: #f76c6c;
