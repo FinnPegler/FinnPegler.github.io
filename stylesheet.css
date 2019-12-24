@@ -175,11 +175,7 @@ a:active {
 }
 
 #mobnavbutton {
-position: absolute;
-left:10px;
-top: 15px;
-background-color: rgb(0, 0, 0, 0);
-border: none;
+display: none;
 }
 
 #mobnavhidden{
@@ -197,7 +193,7 @@ border: none;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   #nav {
     display: none;
   }
@@ -206,6 +202,15 @@ border: none;
     right: 5px;
     top: 5px;
   }
+
+  #mobnavbutton {
+    position: absolute;
+    left:10px;
+    top: 15px;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    display: inherit;
+}
 }
 
 .navitem{
