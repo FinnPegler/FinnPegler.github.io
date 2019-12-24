@@ -2,15 +2,15 @@
 document.onload = popupdelay()
 
 function changepopup(){
-	document.getElementById("popup").className = "shown";
+	document.getElementById("overlay").className = "shown";
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 1000)
+	let milliseconds = setTimeout(changepopup, 3000)
 }
 
 function exitpopup (){
-document.getElementById("popup").className = "hidden";
+document.getElementById("overlay").className = "hidden";
 }
 
 document.getElementById("exit").addEventListener("click", exitpopup);
