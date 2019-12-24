@@ -77,7 +77,9 @@
 
     <div class = "container">
         <div class = "bckbtn"><button class = "button1" id = bckbtn><</button></div>
-        <img src="img1.jpg" id = "car-image" class = "topimages">
+        <div id = "imgcontainer">
+          <div id = "aspectratio">
+              <img src="img1.jpg" id = "car-image"></div></div>
         <div class = "fwdbtn"><button class = "button1" id = fwdbtn>></button></div>
     </div>
 
@@ -91,6 +93,13 @@
       </div>
   </div>
 </div>
+
+
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<!--<p><img id="output" width="200" /></p>-->
+
+
 <hr>
 <div id = "videocontainer">
 <video id = "video" autoplay="autoplay" controls = "controls" loop="loop" muted>

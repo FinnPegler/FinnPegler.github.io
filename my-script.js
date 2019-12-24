@@ -6,7 +6,7 @@ function changepopup(){
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 3000)
+	let milliseconds = setTimeout(changepopup, 900)
 }
 
 function exitpopup (){
@@ -187,19 +187,24 @@ window.onload = centerBoxes;
 
 
 function changeImgFwd() {
-if (document.getElementById("car-image").src.includes("img1.jpg"))	
-{
+if (document.getElementById("car-image").src.includes("img1.jpg"))	{
    	document.getElementById("car-image").src = "img2.jpg";
    	document.getElementById("circle1").className = "smallbtn";
    	document.getElementById("circle2").className = "smallbtndark";
 } 
 
-else if (document.getElementById("car-image").src.includes("img2.jpg")) 
-{
+else if (document.getElementById("car-image").src.includes("img2.jpg")) {
 	document.getElementById("car-image").src = "img3.jpg";
 	document.getElementById("circle2").className = "smallbtn";
    	document.getElementById("circle3").className = "smallbtndark";
 }
+
+else if (document.getElementById("car-image").src.includes("img3.jpg") && count7 > 0) {
+	document.getElementById("car-image").src = "img1.jpg";
+	document.getElementById("circle3").className = "smallbtn";
+   	document.getElementById("circle1").className = "smallbtndark";
+ }
+
 else {document.getElementById("car-image").src = "img1.jpg";
 	document.getElementById("circle3").className = "smallbtn";
    	document.getElementById("circle1").className = "smallbtndark";} 
@@ -269,4 +274,17 @@ document.getElementById("playbtn").addEventListener("click", changeOpacity);
 document.getElementById("pausebtn").addEventListener("click", changeOpacity);
 
 
+//const fileInput = document.getElementById("fileinput");
 
+//fileInput.addEventListener("change", newImage);
+
+  //function newImage {
+  	//console.log("yes")
+ //}
+
+let count7 = 0;
+var loadFile = function(event) {
+	count++;
+	image = document.getElementById('car-image');
+	image.src = URL.createObjectURL(event.target.files[0]); 
+}

@@ -105,8 +105,12 @@ a:active {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #popup {
+    display: none;
+  }
+
+  #overlay {
     display: none;
   }
 }
@@ -160,7 +164,7 @@ a:active {
 .columndark{
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 800px;
   background: rgba(255, 255, 255, 0.1);
   padding: 50px;
   border-radius: 30px;
@@ -170,6 +174,8 @@ a:active {
   text-align: center;
   color: white;
 }
+
+
   
 
 #nav {
@@ -198,8 +204,17 @@ display: none;
   z-index: 2;
 }
 
-
 @media only screen and (max-width: 700px) {
+
+  .column {
+    padding: 20px;
+  }
+
+   .columndark {
+    padding: 20px;
+  }
+
+
   #nav {
     display: none;
   }
@@ -334,15 +349,6 @@ display: none;
 	flex-direction: column;
 }
 
-.topimages {
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 100%;
-  	max-width: 600px;
-
-}
-
 .container {
   display: flex;
   justify-content: space-around;
@@ -352,10 +358,25 @@ display: none;
   height: auto;
 }
 
-.container img {
-    height:auto;
+#imgcontainer {
+    position: relative;
+    width: 100%;
+}
+
+#aspectratio {
+  padding-bottom: 65%
+}
+
+
+#car-image {
+    position: absolute;
+    top: 0;  bottom: 0;  left: 0;  right: 0;
     border-radius: 25px;
-} 
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
 
 .button1{
   background-color: #4b60b4;
@@ -365,6 +386,17 @@ display: none;
   font-weight: bold;
   color: #ffffff;
   margin: 5px 10px 5px 10px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .button1 {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 5px 5px 5px 5px;
+  }
+
 }
 
 .button1:hover {
