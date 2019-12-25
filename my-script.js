@@ -317,5 +317,4 @@ var loadFile = function(event) {
     document.getElementById("circle3").className = "smallbtn";
     document.getElementById("upload1").className = "hidden";
     document.getElementById("upload2").className = "hidden";
-    document.getElementById("upload3").className = "hidden";
 }

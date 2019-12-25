@@ -207,11 +207,11 @@ display: none;
 @media only screen and (max-width: 700px) {
 
   .column {
-    padding: 20px;
+    padding: 10px;
   }
 
    .columndark {
-    padding: 20px;
+    padding: 10px;
   }
 
 
@@ -460,6 +460,10 @@ display: none;
   border-radius: 6px;
 }
 
+#upload1, #upload2 {
+  margin: 20px 0px 0px 0px;
+}
+
 
 #videocontainer {
   position: relative;
@@ -473,7 +477,7 @@ display: none;
 
 
 #video {
-  opacity: 0.6;
+  opacity: 0.8;
   margin: auto;
   z-index: -1;
   display: block;
@@ -589,3 +593,16 @@ display: none;
   flex-wrap: wrap;
 }
 
+.contactcopy {
+  text-align: left;
+  font-size: 22px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .contactcopy {
+  text-align: left;
+  font-size: 18px;
+}
+
+}
