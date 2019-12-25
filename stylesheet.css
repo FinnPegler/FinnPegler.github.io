@@ -277,7 +277,13 @@ display: none;
 #profile img{
 	border-radius: 200px;
   max-height: 200px;
+  border: solid 1px rgba(0,0,0,0.0)
 }
+
+#profile img:hover {
+  opacity: 0.5;
+  border: solid 1px #5fb2ce;
+}  
 
 #intro {
   max-width: 600px;
