@@ -450,7 +450,6 @@ display: none;
   border-radius: 6px;
 }
 
-
 .smallbtndark{
 	background-color: #f76c6c;
 	display: inline;
@@ -461,9 +460,9 @@ display: none;
   border-radius: 6px;
 }
 
+
 #videocontainer {
   position: relative;
-  /*width: min-content;*/
   display: flex;
   justify-content: space-around;
   flex-direction: column;

@@ -6,7 +6,7 @@ function changepopup(){
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 900)
+	let milliseconds = setTimeout(changepopup, 9000)
 }
 
 function exitpopup (){
@@ -200,24 +200,33 @@ else if (document.getElementById("car-image").src.includes("img2.jpg")) {
 }
 
 else if (document.getElementById("car-image").src.includes("img3.jpg") && count7 > 0) {
-	document.getElementById("car-image").src = "img1.jpg";
+	document.getElementById("car-image").src = img4.src;
 	document.getElementById("circle3").className = "smallbtn";
-   	document.getElementById("circle1").className = "smallbtndark";
+   	document.getElementById("circle4").className = "smallbtndark";
  }
+
+else if (document.getElementById("car-image").src = img4.src && count7 > 0) {
+	document.getElementById("car-image").src = "img1.jpg";
+	document.getElementById("circle4").className = "smallbtn";
+   	document.getElementById("circle1").className = "smallbtndark";
+}
 
 else {document.getElementById("car-image").src = "img1.jpg";
 	document.getElementById("circle3").className = "smallbtn";
-   	document.getElementById("circle1").className = "smallbtndark";} 
+   	document.getElementById("circle1").className = "smallbtndark";
+   } 
 }
 
 
+
 function changeImgBck() {
-if (document.getElementById("car-image").src.includes("img1.jpg"))
+if (document.getElementById("car-image").src.includes("img3.jpg"))
 {
-   	document.getElementById("car-image").src = "img3.jpg";
-   	document.getElementById("circle1").className = "smallbtn";
-   	document.getElementById("circle3").className = "smallbtndark";
+   	document.getElementById("car-image").src = "img2.jpg";
+   	document.getElementById("circle3").className = "smallbtn";
+   	document.getElementById("circle2").className = "smallbtndark";
 } 
+
 
 else if (document.getElementById("car-image").src.includes("img2.jpg")) 
 {
@@ -225,9 +234,22 @@ else if (document.getElementById("car-image").src.includes("img2.jpg"))
 	document.getElementById("circle2").className = "smallbtn";
    	document.getElementById("circle1").className = "smallbtndark";
 }
-else {document.getElementById("car-image").src = "img2.jpg";
-	  	document.getElementById("circle3").className = "smallbtn";
-   		document.getElementById("circle2").className = "smallbtndark";
+
+else if (document.getElementById("car-image").src.includes("img1.jpg") && count7 > 0) {
+	document.getElementById("car-image").src = img4.src;
+	document.getElementById("circle1").className = "smallbtn";
+   	document.getElementById("circle4").className = "smallbtndark";
+ }
+
+ else if (document.getElementById("car-image").src = img4.src && count7 > 0) {
+	document.getElementById("car-image").src = "img3.jpg";
+	document.getElementById("circle4").className = "smallbtn";
+   	document.getElementById("circle3").className = "smallbtndark";
+}
+
+else {document.getElementById("car-image").src = "img3.jpg";
+	  	document.getElementById("circle1").className = "smallbtn";
+   		document.getElementById("circle3").className = "smallbtndark";
       } 
 }
 
@@ -283,8 +305,17 @@ document.getElementById("pausebtn").addEventListener("click", changeOpacity);
  //}
 
 let count7 = 0;
+var img4 = document.createElement("IMG");
 var loadFile = function(event) {
-	count++;
 	image = document.getElementById('car-image');
 	image.src = URL.createObjectURL(event.target.files[0]); 
+    img4.src = URL.createObjectURL(event.target.files[0]); 
+    count7++;
+    document.getElementById("circle4").className = "smallbtndark";
+    document.getElementById("circle1").className = "smallbtn";
+    document.getElementById("circle2").className = "smallbtn";
+    document.getElementById("circle3").className = "smallbtn";
+    document.getElementById("upload1").className = "hidden";
+    document.getElementById("upload2").className = "hidden";
+    document.getElementById("upload3").className = "hidden";
 }
