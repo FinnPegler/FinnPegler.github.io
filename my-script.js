@@ -1,5 +1,5 @@
 //popup
-document.onload = popupdelay()
+/*document.onload = popupdelay()
 
 function changepopup(){
 	document.getElementById("overlay").className = "shown";
@@ -20,7 +20,7 @@ document.getElementById("exit").addEventListener("click", exitpopup);
   //  document.getElementById("exitpopup").className = "shown";
 //}
 
-
+*/
 
 //Expand/hide mobile menu
 let count6 = 0;
@@ -44,16 +44,14 @@ let str = ""
 count4 = 0;
 function addToString () {
 if (count4 == 1){str = ""; count4 --; return str}
-if (str.length == 0){str = str.concat("c"); return str}
-if (str.length == 1){str = str.concat("r"); return str}
-if (str.length == 2){str = str.concat("e"); return str}
-if (str.length == 3){str = str.concat("a"); return str}
-if (str.length == 4){str = str.concat("t"); return str}
-if (str.length == 5){str = str.concat("e"); return str}
-if (str.length == 6){str = str.concat("d"); return str}
-if (str.length == 7||str.length == 8){str = str.concat("."); return str}
-//if (){str = str.concat("."); return str}
-if (str.length == 9){str = str.concat("."); count4++; return str}
+if (str.length == 0){str = str.concat("r"); return str}
+if (str.length == 1){str = str.concat("e"); return str}
+if (str.length == 2){str = str.concat("a"); return str}
+if (str.length == 3){str = str.concat("t"); return str}
+if (str.length == 4){str = str.concat("e"); return str}
+if (str.length == 5){str = str.concat("d"); return str}
+if (str.length == 6||str.length == 7){str = str.concat("."); return str}
+if (str.length == 8){str = str.concat("."); count4++; return str}
 }
 
 function strDelay(str){
@@ -89,7 +87,7 @@ function changeVidButton2 () {
 	document.getElementById("pausevid").className = "shown";
 }
 
-
+//stop video on button press
 var vid = document.getElementById("video");
 
 function playVid() {
@@ -100,6 +98,24 @@ function pauseVid() {
     vid.pause();
 }
 
+//Remove Overlay
+function removeOverlay() {
+	document.getElementById("videoheading").className = "hidden";
+	document.getElementById("videoheading2").className = "hidden";
+	document.getElementById("removeoverlay").className = "hidden";
+	document.getElementById("removeoverlay2").className = "shown";
+	document.getElementById("video").style.opacity = "1";
+}
+
+function removeOverlay2() {
+	document.getElementById("videoheading").className = "shown";
+	document.getElementById("videoheading2").className = "shown";
+	document.getElementById("removeoverlay").className = "shown";
+	document.getElementById("removeoverlay2").className = "hidden";
+	document.getElementById("video").style.opacity = ".65";
+}
+
+
 document.getElementById("pausevid").addEventListener("click", stopInsertDelay);
 document.getElementById("pausevid").addEventListener("click", changeVidButton);
 document.getElementById("pausevid").addEventListener("click", pauseVid);
@@ -108,8 +124,13 @@ document.getElementById("playvid").addEventListener("click", insertDelay);
 document.getElementById("playvid").addEventListener("click", changeVidButton2);
 document.getElementById("playvid").addEventListener("click", playVid);
 
+document.getElementById("removeoverlay").addEventListener("click", removeOverlay);
+document.getElementById("removeoverlay2").addEventListener("click", removeOverlay2);
 
 
+
+//speed up video
+vid.playbackRate = 2;
 
 
 //change colour scheme of website
@@ -121,8 +142,6 @@ function changeColour() {
  document.getElementsByClassName("column")[0].className = "columndark";
  document.getElementById("colourchange").innerText = "Light Mode";
  document.getElementById("colourchange").style.background = "#4b60b4";
- //document.getElementById("col3").id = "col3dark";
- //console.log("dark")
  let pelem = document.getElementsByTagName("p");
  	for (var i = 0; i < pelem.length; i++) {
     pelem[i].style.color = "#F0F0F0";
@@ -146,7 +165,7 @@ for (var j = 0; j < h2elem.length; j++) {
 }
 
 else {
-	document.body.style.backgroundImage = "url('bg.png')";
+	document.body.style.backgroundColor = "#a8D0e6";
 	document.getElementsByClassName("columndark")[0].className = "column";
 	document.getElementById("colourchange").innerText = "Dark Mode";
 	document.getElementById("colourchange").style.background = "#2a2a2a";
@@ -235,8 +254,42 @@ function centerBoxes() {
 window.onresize = centerBoxes;
 window.onload = centerBoxes;
 
+//EE
+var count8 = 0;
+document.getElementById("box-img").addEventListener("click", EEAlert);
+document.getElementById("exitEE").addEventListener("click", exitEE);
+document.getElementById("reveal").addEventListener("click", reveal);
+
+function EEAlert(){
+	document.getElementById("EE1").className = "shown";
+}
+
+function exitEE() {
+	if (count8 > 0) {
+	document.getElementById("reveal").classList.remove("hidden");
+	document.getElementById("EEcopy").innerHTML = 
+	"You have found the Easter Egg. Click the button to reveal a joke!";
+	document.getElementById("EEH").innerHTML = "Congratulations!";
+	document.getElementById("EE1").className = "hidden";
+	count8--;
+	return count8;
+	}
+else document.getElementById("EE1").className = "hidden";
+}
 
 
+function reveal() {
+	document.getElementById("reveal").className = "hidden";
+	document.getElementById("EEcopy").innerHTML = 
+	"Newsflash: Programmer found dead in the shower with a bottle of"
+	+ " shampoo that says \"lather, rinse, repeat\"";
+	document.getElementById("EEH").innerHTML = "A Corny Joke";
+	count8 ++;
+	return count8;
+}
+
+
+//Carousel functions
 function changeImgFwd() {
 if (document.getElementById("car-image").src.includes("img1.jpg"))	{
    	document.getElementById("car-image").src = "img2.jpg";
@@ -355,16 +408,6 @@ function playImgs(){
 
 
 
-
-
-//const fileInput = document.getElementById("fileinput");
-
-//fileInput.addEventListener("change", newImage);
-
-  //function newImage {
-  	//console.log("yes")
- //}
-
 let count7 = 0;
 var img4 = document.createElement("IMG");
 var loadFile = function(event) {
@@ -379,3 +422,6 @@ var loadFile = function(event) {
     document.getElementById("upload1").className = "hidden";
     document.getElementById("upload2").className = "hidden";
 }
+
+
+
