@@ -112,12 +112,21 @@ a:active {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 250px;
-  background-color: #a8D0e6;
+  background-color: #E1F0F7;
   border-radius: 30px;
   border: 3px solid grey;
   font-size: 24px;
 }
 
+#overlayexit{
+  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  }
 
 @media only screen and (max-width: 700px) {
   #popup {
@@ -130,19 +139,30 @@ a:active {
 }
 
 #exit {
- position: absolute;
- float:right; 
- left: 360px;
- top: 40px;
- transform: translate(-50%, -50%);
- vertical-align: top
+background-color: #4b60b4;
+  width: 100px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+
+#popupcontent {
+  display: flex;
+  margin: 10px 25px 10px 25px;
+  align-items: center;
 }
 
 #popupcopy{
   color: #24305e;
   font-size: 22px;
-  margin: 30px 30px 30px 30px;
 }
+
+
 
 
 #colourchange {
@@ -472,22 +492,16 @@ display: none;
 
 #playbtn{
 	background-color: #4b60b4;
-  width: 120px;
-	padding: 5px;
+  width: 100px;
 	border-radius: 12px;
-	font-size: 16px;
-	font-weight: bold;
   margin: 20px 20px 0px 20px;
   cursor: pointer;
 }
 
 #pausebtn{
   background-color: #4b60b4;
-  width: 120px;
-  padding: 5px;
+  width: 100px;
   border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
   margin: 20px 20px 0px 20px;
   opacity: 0.2;
   cursor: pointer;
@@ -577,7 +591,7 @@ display: none;
 
 #videoheading2{
   left: 27%;
-  top: 20%;
+  top: 21%;
   position: absolute;
   background-color: #f76c6c;
   color: white;
@@ -599,7 +613,7 @@ display: none;
 
 #videoheading2{
   left: 18%;
-  top: 17%;
+  top: 13%;
   position: absolute;
   background-color: #f76c6c;
   color: white;
@@ -615,7 +629,7 @@ display: none;
 #pausevid {
   background-color: #4b60b4;
   width: 160px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -629,7 +643,7 @@ display: none;
 #playvid {
   background-color: #4b60b4;
   width: 160px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -642,7 +656,7 @@ display: none;
 #removeoverlay {
   background-color: #4b60b4;
   width: 160px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -693,7 +707,7 @@ display: none;
   transform: translate(-50%, -50%);
   width: 400px;
   height: 250px;
-  background-color: #FFC857;
+  background-color: #E1F0F7;
   border-radius: 30px;
   border: 3px solid grey;
   font-size: 24px;

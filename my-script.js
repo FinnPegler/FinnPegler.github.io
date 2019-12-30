@@ -10,15 +10,10 @@ function popupdelay(){
 }
 
 function exitpopup (){
-document.getElementById("overlay").className = "hidden";
+document.getElementById("overlayexit").className = "hidden";
 }
 
 document.getElementById("exit").addEventListener("click", exitpopup);
-
-//exit popup
-//window.onbeforeunload = showexitpopup() {
-  //  document.getElementById("exitpopup").className = "shown";
-//}
 
 */
 
@@ -130,7 +125,7 @@ document.getElementById("removeoverlay2").addEventListener("click", removeOverla
 
 
 //speed up video
-vid.playbackRate = 2;
+vid.playbackRate = 1.3;
 
 
 //change colour scheme of website
@@ -417,4 +412,29 @@ var loadFile = function(event) {
 }
 
 
+//Exit popup
+let count10 = 0;
+setTimeout(startTimer, 1000)
+function startTimer() {
+	count10 ++;
+}
+
+let count9 = 0;
+function onMouseOut(event) {
+if (event.clientY < 30 && count9 <1 && count10 >0) {
+	document.removeEventListener("mouseout", onMouseOut);
+	document.getElementById("overlay").className = "shown";
+	count9 ++;
+}
+else return null;
+}
+
+function exitpopup (){
+
+document.getElementById("overlay").className = "hidden";
+}
+
+
+document.body.addEventListener("mouseout", onMouseOut);
+document.getElementById("exit").addEventListener("click", exitpopup);
 
