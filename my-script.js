@@ -6,7 +6,7 @@ function changepopup(){
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 90000)
+	let milliseconds = setTimeout(changepopup, 9000)
 }
 
 function exitpopup (){
@@ -89,11 +89,27 @@ function changeVidButton2 () {
 	document.getElementById("pausevid").className = "shown";
 }
 
+
+var vid = document.getElementById("video");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+
 document.getElementById("pausevid").addEventListener("click", stopInsertDelay);
 document.getElementById("pausevid").addEventListener("click", changeVidButton);
+document.getElementById("pausevid").addEventListener("click", pauseVid);
 
 document.getElementById("playvid").addEventListener("click", insertDelay);
 document.getElementById("playvid").addEventListener("click", changeVidButton2);
+document.getElementById("playvid").addEventListener("click", playVid);
+
+
+
 
 
 //change colour scheme of website
