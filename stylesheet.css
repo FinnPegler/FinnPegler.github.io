@@ -151,7 +151,7 @@ a:active {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.55);
   padding: 50px;
   border-radius: 30px;
   margin: auto;
@@ -241,7 +241,7 @@ display: none;
   top: -96px; 
   width: 180px;
   height: 46px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   background: #4b60b4;
   font-weight: bold;
   font-size: 30px;
@@ -323,6 +323,8 @@ display: none;
   min-width: 150px; 
   margin-bottom: 40px;
   border-radius: 30px;
+  height: 230px;
+  line-height: 170px;
 }
 
 #col2 {
@@ -332,6 +334,8 @@ display: none;
   min-width: 150px; 
   margin-bottom: 40px;
   border-radius: 30px;
+  height: 230px;
+  line-height: 170px;
 }
 
 #col3 {
@@ -341,6 +345,8 @@ display: none;
   min-width: 150px; 
   margin-bottom: 40px;
   border-radius: 30px;
+  height: 230px;
+  line-height: 170px;
 }
 
 #col3dark {
@@ -350,7 +356,12 @@ display: none;
   min-width: 150px; 
   margin-bottom: 40px;
   border-radius: 30px;
+  line-height: 170px;
 }
+
+ #icon1, #icon2, #icon3 {
+  line-height: normal;
+ }
 
 #carousel {
 	flex-direction: column;

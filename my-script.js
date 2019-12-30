@@ -15,6 +15,11 @@ document.getElementById("overlay").className = "hidden";
 
 document.getElementById("exit").addEventListener("click", exitpopup);
 
+//exit popup
+//window.onbeforeunload = showexitpopup() {
+  //  document.getElementById("exitpopup").className = "shown";
+//}
+
 //Expand/hide mobile menu
 let count6 = 0;
 function mobnav(){
@@ -30,7 +35,6 @@ function mobnav(){
 
 document.getElementById("mobnavbutton").addEventListener("click", mobnav);
 document.getElementsByClassName("mobilenavitem")[1].addEventListener("click", mobnav);
-document.getElementsByClassName("mobilenavitem")[2].addEventListener("click", mobnav);
 
 
 //functions to create the video caption animation
