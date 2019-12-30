@@ -20,6 +20,8 @@ document.getElementById("exit").addEventListener("click", exitpopup);
   //  document.getElementById("exitpopup").className = "shown";
 //}
 
+
+
 //Expand/hide mobile menu
 let count6 = 0;
 function mobnav(){
@@ -98,28 +100,57 @@ document.getElementById("playvid").addEventListener("click", changeVidButton2);
 let count3 = 0;
 function changeColour() {
 	if (count3 < 1){
- document.body.style.backgroundImage = "url('bg2.png')";
+ document.body.style.background = "none";
+ document.body.style.backgroundColor = "#2a2a2a";
  document.getElementsByClassName("column")[0].className = "columndark";
  document.getElementById("colourchange").innerText = "Light Mode";
- document.getElementById("col3").id = "col3dark";
+ document.getElementById("colourchange").style.background = "#4b60b4";
+ //document.getElementById("col3").id = "col3dark";
  //console.log("dark")
  let pelem = document.getElementsByTagName("p");
  	for (var i = 0; i < pelem.length; i++) {
     pelem[i].style.color = "#F0F0F0";
 	}  
-count3 ++;
+let h3elem = document.getElementsByClassName("boxcopy")
+for (var j = 0; j < h3elem.length; j++) {
+    h3elem[j].style.color = "#24305e";
+	}  
+
+let h1elem = document.getElementsByTagName("h1");
+for (var j = 0; j < h1elem.length; j++) {
+    h1elem[j].style.color = "#F0F0F0";
+	}  
+
+let h2elem = document.getElementsByTagName("h2");
+for (var j = 0; j < h2elem.length; j++) {
+    h2elem[j].style.color = "#F0F0F0";
+	} 
+
+	count3 ++;
 }
 
 else {
 	document.body.style.backgroundImage = "url('bg.png')";
 	document.getElementsByClassName("columndark")[0].className = "column";
 	document.getElementById("colourchange").innerText = "Dark Mode";
-	document.getElementById("col3dark").id = "col3";
+	document.getElementById("colourchange").style.background = "#2a2a2a";
+	//document.getElementById("col3dark").id = "col3";
 	let pelem = document.getElementsByTagName("p");
 		for (var i = 0; i < pelem.length; i++) {
     pelem[i].style.color = "#24305e";
 		}
-		count3--;
+
+let h1elem = document.getElementsByTagName("h1");
+for (var j = 0; j < h1elem.length; j++) {
+    h1elem[j].style.color = "#24305e";
+	}  
+
+let h2elem = document.getElementsByTagName("h2");
+for (var j = 0; j < h2elem.length; j++) {
+    h2elem[j].style.color = "#24305e";
+	} 
+
+count3--;
 }
 
 }
