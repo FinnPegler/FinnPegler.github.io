@@ -6,7 +6,7 @@ function changepopup(){
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 9000)
+	let milliseconds = setTimeout(changepopup, 90000)
 }
 
 function exitpopup (){
@@ -271,7 +271,7 @@ var x = null;
 var count = 0;
 function playImgs(){
 	if (count <1 ){
-		x = setInterval(changeImgFwd, 1000);
+		x = setInterval(changeImgFwd, 2500);
 		count += 1;
 	}
 	else {
