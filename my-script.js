@@ -267,7 +267,9 @@ function exitEE() {
 	document.getElementById("EE1").className = "hidden";
 	}
 
+	let count9 = 0;
 function reveal() {
+    count9++; 
 	document.getElementById("exitEE").classList.remove("hidden");
 	document.getElementById("reveal").className = "hidden";
 	document.getElementById("EEcopy").innerHTML = 
@@ -414,17 +416,16 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 8000)
+setTimeout(startTimer, 5000)
 function startTimer() {
 	count10 ++;
 }
 
-let count9 = 0;
+
 function onMouseOut(event) {
 if (event.clientY < 30 && count9 <1 && count10 >0) {
 	document.removeEventListener("mouseout", onMouseOut);
 	document.getElementById("overlay").className = "shown";
-	count9 ++;
 }
 else return null;
 }

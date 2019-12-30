@@ -153,7 +153,7 @@ background-color: #4b60b4;
 
 #popupcontent {
   display: flex;
-  margin: 10px 25px 10px 25px;
+  margin: 10px 10px 10px 10px;
   align-items: center;
 }
 
@@ -161,8 +161,6 @@ background-color: #4b60b4;
   color: #24305e;
   font-size: 22px;
 }
-
-
 
 
 #colourchange {
@@ -316,13 +314,8 @@ display: none;
 #profile img{
 	border-radius: 200px;
   max-height: 200px;
-  cursor: pointer;
 }
 
-/*#profile img:hover {
-  opacity: 0.5;
-  border: solid 1px #5fb2ce;
-} */ 
 
 #intro {
   max-width: 600px;
