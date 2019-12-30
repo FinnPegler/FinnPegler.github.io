@@ -416,16 +416,17 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 5000)
+setTimeout(startTimer, 500)
 function startTimer() {
 	count10 ++;
 }
 
-
+let count11 = 0;
 function onMouseOut(event) {
-if (event.clientY < 30 && count9 <1 && count10 >0) {
+if (event.clientY < 30 && count9 <1 && count10 >0 && count11 <2) {
 	document.removeEventListener("mouseout", onMouseOut);
 	document.getElementById("overlay").className = "shown";
+	count11++;
 }
 else return null;
 }
