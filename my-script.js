@@ -6,7 +6,7 @@ function changepopup(){
 }
 
 function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 9000)
+	let milliseconds = setTimeout(changepopup, 900000)
 }
 
 function exitpopup (){
@@ -314,37 +314,47 @@ document.onkeydown = function (event){
 	if (event.keyCode == "39"){changeImgFwd()}	
 }
 
+
 var x = null;
 var count = 0;
+var count2 = 1;
+
+function count2Plus(){
+	if (count2 == 1) {count2 -= 1};
+	return count2;
+}
+
+function count2Minus(){
+	if (count2 == 0) {count2 += 1};
+	return count2;
+}
+
 function playImgs(){
-	if (count <1 ){
+	if (count <1 && count2 <1){
+		document.getElementById("playbtn").style.opacity = 0.2;
+		document.getElementById("pausebtn").style.opacity = 1;
 		x = setInterval(changeImgFwd, 2500);
 		count += 1;
 	}
+
+	if (count = 1 && count2 <1){
+		return count;
+	}
+
 	else {
+		document.getElementById("playbtn").style.opacity = 1;
+		document.getElementById("pausebtn").style.opacity = 0.2;
 		clearInterval(x);
 		count -= 1;
 	}
 }
+    document.getElementById("playbtn").addEventListener("click", count2Plus)
+	document.getElementById("playbtn").addEventListener("click", playImgs)
+	document.getElementById("pausebtn").addEventListener("click", count2Minus)
+	document.getElementById("pausebtn").addEventListener("click", playImgs)
 
-var count2 = 0;
-function changeOpacity(){
-	if (count2 <1 ){
-		document.getElementById("playbtn").style.opacity = 0.2;
-		document.getElementById("pausebtn").style.opacity = 1;
-		count2 += 1;
-	}
-	else {
-		document.getElementById("playbtn").style.opacity = 1;
-		document.getElementById("pausebtn").style.opacity = 0.2;
-		count2 -= 1;
-	}
-}
 
-document.getElementById("playbtn").addEventListener("click", playImgs);
-document.getElementById("pausebtn").addEventListener("click", playImgs);
-document.getElementById("playbtn").addEventListener("click", changeOpacity);
-document.getElementById("pausebtn").addEventListener("click", changeOpacity);
+
 
 
 //const fileInput = document.getElementById("fileinput");
