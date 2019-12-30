@@ -255,7 +255,6 @@ window.onresize = centerBoxes;
 window.onload = centerBoxes;
 
 //EE
-var count8 = 0;
 document.getElementById("box-img").addEventListener("click", EEAlert);
 document.getElementById("exitEE").addEventListener("click", exitEE);
 document.getElementById("reveal").addEventListener("click", reveal);
@@ -265,27 +264,21 @@ function EEAlert(){
 }
 
 function exitEE() {
-	if (count8 > 0) {
+	document.getElementById("exitEE").className = "hidden";
 	document.getElementById("reveal").classList.remove("hidden");
 	document.getElementById("EEcopy").innerHTML = 
 	"You have found the Easter Egg. Click the button to reveal a joke!";
 	document.getElementById("EEH").innerHTML = "Congratulations!";
 	document.getElementById("EE1").className = "hidden";
-	count8--;
-	return count8;
 	}
-else document.getElementById("EE1").className = "hidden";
-}
-
 
 function reveal() {
+	document.getElementById("exitEE").classList.remove("hidden");
 	document.getElementById("reveal").className = "hidden";
 	document.getElementById("EEcopy").innerHTML = 
 	"Newsflash: Programmer found dead in the shower with a bottle of"
 	+ " shampoo that says \"lather, rinse, repeat\"";
 	document.getElementById("EEH").innerHTML = "A Corny Joke";
-	count8 ++;
-	return count8;
 }
 
 
