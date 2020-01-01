@@ -10,13 +10,13 @@ body {
 }
 
 p {
-  color: #24305e;
+  color: #4b60b4;
   font-size: 22px;
   text-align: center;
 }
 
 h1,h2,h3,h4 {
-  color: #24305e;
+  color: #4b60b4;
   font-family: 'Bree Serif', serif;
 }
 
@@ -139,7 +139,7 @@ a:active {
 }
 
 #exit {
-background-color: #4b60b4;
+background-color: #f76c6c;
   width: 100px;
   padding: 12px;
   border-radius: 10px;
@@ -277,7 +277,7 @@ display: none;
   width: 180px;
   height: 46px;
   border-radius: 10px 10px 0px 0px;
-  background: #4b60b4;
+  background: #f76c6c;
   font-weight: bold;
   font-size: 30px;
   color: white;
@@ -290,7 +290,7 @@ display: none;
   width: 180px;
   height: 46px;
   border-radius: 10px;
-  background: #4b60b4;
+  background: #f76c6c;
   font-weight: bold;
   font-size: 30px;
   color: white;
@@ -396,6 +396,7 @@ display: none;
 
 .boxcopy {
   font-weight: bold;
+  color: #4b60b4;
 }
 
  #icon1, #icon2, #icon3 {
@@ -440,7 +441,7 @@ display: none;
 }
 
 .button1{
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   padding: 5px;
   border-radius: 10px;
   font-size: 14px;
@@ -483,7 +484,7 @@ display: none;
 }
 
 #playbtn{
-	background-color: #4b60b4;
+	background-color: #f76c6c;
   width: 100px;
 	border-radius: 12px;
   margin: 20px 20px 0px 20px;
@@ -491,7 +492,7 @@ display: none;
 }
 
 #pausebtn{
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 100px;
   border-radius: 12px;
   margin: 20px 20px 0px 20px;
@@ -500,11 +501,11 @@ display: none;
 }
 
 #playbtn:hover {
-  background-color: #6f80c3;
+  background-color: #faa4a4;
 }
 
 #pausebtn:hover {
-  background-color: #6f80c3;
+  background-color: #faa4a4;
 }
 
 
@@ -526,7 +527,7 @@ display: none;
 }
 
 .smallbtndark{
-	background-color: #f76c6c;
+	background-color: #4FAD7C;
 	display: inline;
   margin-left: auto;
   margin-right: auto;
@@ -541,7 +542,7 @@ display: none;
 }
 
 #label {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   color: white;
   font-size: 26px;
   cursor: pointer;
@@ -574,7 +575,7 @@ display: none;
   left: 20%;
   top: 10%;
   position: absolute;
-  background-color: #f76c6c;
+  background-color: #4b60b4; 
   color: white;
   font-weight: bold;
   font-size: 30px;
@@ -585,7 +586,7 @@ display: none;
   left: 27%;
   top: 21%;
   position: absolute;
-  background-color: #f76c6c;
+  background-color: #4b60b4;
   color: white;
   font-weight: bold;
   font-size: 30px;
@@ -619,7 +620,7 @@ display: none;
 }
 
 #pausevid {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 160px;
   padding: 14px;
   border-radius: 10px;
@@ -633,7 +634,7 @@ display: none;
 
 
 #playvid {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 160px;
   padding: 14px;
   border-radius: 10px;
@@ -646,7 +647,7 @@ display: none;
 }
 
 #removeoverlay {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 160px;
   padding: 14px;
   border-radius: 10px;
@@ -659,7 +660,7 @@ display: none;
 }
 
 #removeoverlay2 {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 160px;
   padding: 14px;
   border-radius: 10px;
@@ -719,7 +720,7 @@ display: none;
  top: 40px;
  transform: translate(-50%, -50%);
  vertical-align: top;
- background-color: #4b60b4;
+ background-color: #f76c6c;
  padding: 8px;
  border-radius: 10px;
  font-size: 14px;
@@ -729,7 +730,7 @@ display: none;
 }
 
 #reveal {
-  background-color: #4b60b4;
+  background-color: #f76c6c;
   width: 100px;
   padding: 12px;
   border-radius: 10px;

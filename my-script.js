@@ -136,14 +136,16 @@ function changeColour() {
  document.body.style.backgroundColor = "#2a2a2a";
  document.getElementsByClassName("column")[0].className = "columndark";
  document.getElementById("colourchange").innerText = "Light Mode";
- document.getElementById("colourchange").style.background = "#4b60b4";
+ document.getElementById("colourchange").style.background = "#a8D0e6";
+ document.getElementById("colourchange").style.color = "#4b60b4";
+
  let pelem = document.getElementsByTagName("p");
  	for (var i = 0; i < pelem.length; i++) {
     pelem[i].style.color = "#F0F0F0";
 	}  
 let h3elem = document.getElementsByClassName("boxcopy")
 for (var j = 0; j < h3elem.length; j++) {
-    h3elem[j].style.color = "#24305e";
+    h3elem[j].style.color = "#4b60b4";
 	}  
 
 let h1elem = document.getElementsByTagName("h1");
@@ -164,20 +166,20 @@ else {
 	document.getElementsByClassName("columndark")[0].className = "column";
 	document.getElementById("colourchange").innerText = "Dark Mode";
 	document.getElementById("colourchange").style.background = "#2a2a2a";
-	//document.getElementById("col3dark").id = "col3";
+	 document.getElementById("colourchange").style.color = "#ffffff";
 	let pelem = document.getElementsByTagName("p");
 		for (var i = 0; i < pelem.length; i++) {
-    pelem[i].style.color = "#24305e";
+    pelem[i].style.color = "#4b60b4";
 		}
 
 let h1elem = document.getElementsByTagName("h1");
 for (var j = 0; j < h1elem.length; j++) {
-    h1elem[j].style.color = "#24305e";
+    h1elem[j].style.color = "#4b60b4";
 	}  
 
 let h2elem = document.getElementsByTagName("h2");
 for (var j = 0; j < h2elem.length; j++) {
-    h2elem[j].style.color = "#24305e";
+    h2elem[j].style.color = "#4b60b4";
 	} 
 
 count3--;
