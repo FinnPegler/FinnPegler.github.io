@@ -423,7 +423,7 @@ function startTimer() {
 
 let count11 = 0;
 function onMouseOut(event) {
-if (event.clientY < 30 && count9 <1 && count10 >0 && count11 <2) {
+if (event.clientY < 30 && count9 <1 && count10 >0 && count11 <1) {
 	document.removeEventListener("mouseout", onMouseOut);
 	document.getElementById("overlay").className = "shown";
 	count11++;

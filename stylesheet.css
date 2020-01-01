@@ -316,7 +316,6 @@ display: none;
   max-height: 200px;
 }
 
-
 #intro {
   max-width: 600px;
   margin-right: 10px;
@@ -662,7 +661,7 @@ display: none;
 #removeoverlay2 {
   background-color: #4b60b4;
   width: 160px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
