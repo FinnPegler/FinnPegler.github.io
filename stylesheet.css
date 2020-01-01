@@ -270,9 +270,9 @@ display: none;
 }
 
 .navitem{
+  flex-grow: 0.5;
   font-family: 'Bree Serif', serif;
   position: relative;
-  float: left;
   top: -96px; 
   width: 180px;
   height: 46px;
@@ -283,6 +283,11 @@ display: none;
   color: white;
   line-height:46px;
   margin: 0px 5px 0px 5px;
+
+}
+
+#navitem:hover {
+  flex-grow: 2;
 }
 
 .mobilenavitem{
@@ -480,7 +485,7 @@ display: none;
 }
 
 .button1:hover {
-  opacity: 0.5;
+  background-color: #faa4a4;
 }
 
 #playbtn{
@@ -548,6 +553,11 @@ display: none;
   cursor: pointer;
 }
 
+#label:hover {
+  background-color: #faa4a4;
+}
+
+
 
 #videocontainer {
   position: relative;
@@ -598,7 +608,7 @@ display: none;
   left: 11%;
   top: 6%;
   position: absolute;
-  background-color: #f76c6c;
+  background-color: #4b60b4; 
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -608,7 +618,7 @@ display: none;
   left: 18%;
   top: 13%;
   position: absolute;
-  background-color: #f76c6c;
+  background-color: #4b60b4; 
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -671,6 +681,11 @@ display: none;
   z-index: 2;
   cursor: pointer;
 }
+
+#removeoverlay2:hover,#removeoverlay:hover, #playvid:hover, #pausevid:hover {
+  background-color: #faa4a4;
+}
+
 
 #contact{
   display: flex;
