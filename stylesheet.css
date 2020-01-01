@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #a8D0e6;
-    /*background-image: url("bg.png");*/
     background-repeat: repeat;
     background-attachment: fixed;
   	text-align: center;
@@ -36,11 +35,7 @@ h3 {
   margin: 15px 0px 0px 0px;
 }
 
-/*@media only screen and (max-width: 800px) {
-  h3 {
-  font-size: 20px;
-}
-}*/
+
 
 html {
   scroll-behavior: smooth;
@@ -58,16 +53,13 @@ hr {
 
 a:link {
     text-decoration: none;
-    color: #24305e;
+    color: #4b60b4;
 }
 
-#nav a:link {
-  color: white;
-}
 
 a:visited {
     text-decoration: none;
-    color: #24305e;
+    color: #4b60b4;
 }
 a:hover {
     text-decoration: none;
@@ -75,7 +67,7 @@ a:hover {
 }
 a:active {
     text-decoration: none;
-    color: #24305e;
+    color: #4b60b4;
 }
 
 
@@ -140,7 +132,7 @@ a:active {
 
 #exit {
 background-color: #f76c6c;
-  width: 100px;
+  width: 150px;
   padding: 12px;
   border-radius: 10px;
   font-size: 14px;
@@ -158,7 +150,7 @@ background-color: #f76c6c;
 }
 
 #popupcopy{
-  color: #24305e;
+  color: #4b60b4;
   font-size: 22px;
 }
 
@@ -218,6 +210,7 @@ background-color: #f76c6c;
 	flex-direction: row; 
   flex-wrap: wrap;
   z-index: 2;
+  max-width: 470px;
 }
 
 #mobnavbutton {
@@ -269,8 +262,7 @@ display: none;
 }
 }
 
-.navitem{
-  flex-grow: 0.5;
+.navitem {
   font-family: 'Bree Serif', serif;
   position: relative;
   top: -96px; 
@@ -280,14 +272,17 @@ display: none;
   background: #f76c6c;
   font-weight: bold;
   font-size: 30px;
-  color: white;
   line-height:46px;
   margin: 0px 5px 0px 5px;
-
+  flex-grow: 1;
 }
 
-#navitem:hover {
-  flex-grow: 2;
+.navitem:hover {
+  flex-grow: 6;
+}
+
+.nava {
+  color: white !important;
 }
 
 .mobilenavitem{
@@ -484,7 +479,7 @@ display: none;
 
 }
 
-.button1:hover {
+.button1:hover, #exit:hover, #reveal:hover  {
   background-color: #faa4a4;
 }
 
@@ -682,7 +677,7 @@ display: none;
   cursor: pointer;
 }
 
-#removeoverlay2:hover,#removeoverlay:hover, #playvid:hover, #pausevid:hover {
+#removeoverlay2:hover,#removeoverlay:hover, #playvid:hover, #pausevid:hover, #exitEE:hover  {
   background-color: #faa4a4;
 }
 
@@ -723,7 +718,7 @@ display: none;
 
 
 #EEcopy{
-  color: #24305e;
+  color: #4b60b4;
   font-size: 22px;
   margin: 30px 30px 30px 30px;
 }
@@ -746,7 +741,7 @@ display: none;
 
 #reveal {
   background-color: #f76c6c;
-  width: 100px;
+  width: 150px;
   padding: 12px;
   border-radius: 10px;
   font-size: 14px;
