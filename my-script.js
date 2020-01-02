@@ -421,7 +421,7 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 1000)
+setTimeout(startTimer, 10000)
 function startTimer() {
 	count10 ++;
 }
