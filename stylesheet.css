@@ -137,7 +137,7 @@ a:active {
   z-index: -10;
   }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 775px) {
   #popup {
     display: none;
   }
@@ -189,9 +189,6 @@ background-color: #f76c6c;
 }
 
 
-
-
-
 .column{
   display: flex;
   flex-direction: column;
@@ -200,7 +197,7 @@ background-color: #f76c6c;
   padding: 50px;
   border-radius: 30px;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 13%;
   margin-bottom: 8%;
   text-align: center;
   color: white;
@@ -215,7 +212,7 @@ background-color: #f76c6c;
   padding: 50px;
   border-radius: 30px;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 13%;
   margin-bottom: 8%;
   text-align: center;
   color: white;
@@ -227,7 +224,7 @@ background-color: #f76c6c;
 	flex-direction: row; 
   flex-wrap: wrap;
   z-index: 2;
-  max-width: 470px;
+  max-width: 600px;
 }
 
 #mobnavbutton {
@@ -238,7 +235,7 @@ display: none;
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 775px) {
 
   .column {
     padding: 10px;
@@ -254,8 +251,10 @@ display: none;
   }
 
   #colourchange {
-    right: 5px;
-    top: 5px;
+    right: 3px;
+    top: 3px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   #mobnavbutton {
@@ -480,7 +479,7 @@ background: #faa4a4;
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 775px) {
 
   .button1 {
     padding: 2px;
@@ -781,7 +780,7 @@ background: #faa4a4;
 }
 
 #thanks{
-  max-width: 600px;
+  max-width: 580px;
   margin: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
@@ -831,10 +830,20 @@ background: #faa4a4;
   cursor: pointer;
 }
 
-
-
-
 @media only screen and (max-width: 400px) {
+  #EE2 {
+    font-size: 18px;
+    width: 330px;
+    height: 300px;
+}
+  #exitEE {
+ left: 290px;
+ top: 35px;
+}
+}
+
+
+@media only screen and (max-width: 775px) {
   .contactcopy {
   text-align: left;
   font-size: 18px;
