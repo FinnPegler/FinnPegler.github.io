@@ -1,21 +1,3 @@
-//popup
-/*document.onload = popupdelay()
-
-function changepopup(){
-	document.getElementById("overlay").className = "shown";
-}
-
-function popupdelay(){
-	let milliseconds = setTimeout(changepopup, 900000)
-}
-
-function exitpopup (){
-document.getElementById("overlayexit").className = "hidden";
-}
-
-document.getElementById("exit").addEventListener("click", exitpopup);
-
-*/
 
 //Expand/hide mobile menu
 let count6 = 0;
@@ -124,7 +106,6 @@ document.getElementById("playvid").addEventListener("click", playVid);
 
 document.getElementById("removeoverlay").addEventListener("click", removeOverlay);
 document.getElementById("removeoverlay2").addEventListener("click", removeOverlay2);
-
 
 
 //speed up video
@@ -469,3 +450,10 @@ function changeColour1() {
     videoheading2.style.setProperty("background-color", this.value);
 }
 
+
+//Alert popup to list features
+document.getElementById("alert").addEventListener("click", featureAlert);
+
+function featureAlert() {
+	alert("Dark Mode Switch\nMobile Navigation\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing words overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
+}
