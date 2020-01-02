@@ -13,7 +13,9 @@ function mobnav(){
 }
 
 document.getElementById("mobnavbutton").addEventListener("click", mobnav);
+document.getElementsByClassName("mobilenavitem")[0].addEventListener("click", mobnav);
 document.getElementsByClassName("mobilenavitem")[1].addEventListener("click", mobnav);
+document.getElementsByClassName("mobilenavitem")[2].addEventListener("click", mobnav);
 
 
 //functions to create the video caption animation
@@ -269,7 +271,7 @@ function reveal() {
 	document.getElementById("reveal").className = "hidden";
 	document.getElementById("EEcopy").innerHTML = 
 	"Newsflash: Programmer found dead in the shower with a bottle of"
-	+ " shampoo that says \"lather, rinse, repeat\"";
+	+ " shampoo that says \"lather, rinse, repeat\".";
 	document.getElementById("EEH").innerHTML = "A Corny Joke";
 }
 

@@ -225,6 +225,8 @@ background-color: #f76c6c;
   flex-wrap: wrap;
   z-index: 2;
   max-width: 600px;
+  height: 52px;
+  margin-bottom: -15px;
 }
 
 #mobnavbutton {
@@ -294,6 +296,8 @@ display: none;
 
 .navitem:hover {
 background: #faa4a4;
+height: 52px;
+top: -102px; 
 }
 .nava {
   color: white !important;
