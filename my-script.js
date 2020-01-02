@@ -82,7 +82,7 @@ function removeOverlay() {
 	document.getElementById("removeoverlay").className = "hidden";
 	document.getElementById("removeoverlay2").className = "shown";
 	document.getElementById("video").style.opacity = "1";
-	document.getElementById("video").style.transition = "opacity 2500ms";
+	document.getElementById("video").style.transition = "opacity 1000ms";
 } 
   
 
@@ -92,7 +92,7 @@ function removeOverlay2() {
 	document.getElementById("removeoverlay").className = "shown";
 	document.getElementById("removeoverlay2").className = "hidden";
 	document.getElementById("video").style.opacity = ".6";
-	document.getElementById("video").style.transition = "opacity 2500ms";
+	document.getElementById("video").style.transition = "opacity 1000ms";
 }
 
 
@@ -214,6 +214,7 @@ document.getElementById("col3").addEventListener("mouseleave", hideIcon3);
 document.getElementById("col3").addEventListener("mouseenter", showIcon3);
 
 
+//function to center the three boxes when screen resized or for mobile
 function centerBoxes() {
 	let elem1 = document.getElementById("threecolumns");
 	let info1 = elem1.getBoundingClientRect();
@@ -455,5 +456,5 @@ function changeColour1() {
 document.getElementById("alert").addEventListener("click", featureAlert);
 
 function featureAlert() {
-	alert("Dark Mode Switch\nMobile Navigation\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing words overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
+	alert("Dark Mode Switch\nMobile Navigation\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing word overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
 }
