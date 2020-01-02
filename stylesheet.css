@@ -41,7 +41,9 @@ h3 {
   margin: 15px 0px 0px 0px;
 }
 
-
+button {
+  font-size: 18px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -152,7 +154,7 @@ background-color: #f76c6c;
   width: 150px;
   padding: 12px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   margin: 0px 10px 0px 10px;
@@ -177,10 +179,10 @@ background-color: #f76c6c;
   right: 25px;
   top: 25px;
   background-color: #353535;
-  width: 100px;
+  width: 110px;
   padding: 12px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #ffffff;
   margin: 5px 10px 5px 10px;
@@ -284,7 +286,7 @@ display: none;
   font-family: 'Bree Serif', serif;
   position: relative;
   top: -96px; 
-  width: 180px;
+  width: 175px;
   height: 46px;
   border-radius: 10px 10px 0px 0px;
   background: #f76c6c;
@@ -305,7 +307,7 @@ top: -102px;
 
 .mobilenavitem{
   font-family: 'Bree Serif', serif; 
-  width: 180px;
+  width: 175px;
   height: 46px;
   border-radius: 10px;
   background: #f76c6c;
@@ -776,7 +778,7 @@ top: -102px;
   width: 150px;
   padding: 12px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   margin: 10px 10px 0px 10px;

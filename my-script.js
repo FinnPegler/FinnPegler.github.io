@@ -243,9 +243,10 @@ document.getElementById("box-img").addEventListener("click", EEAlert);
 document.getElementById("exitEE").addEventListener("click", exitEE);
 document.getElementById("reveal").addEventListener("click", reveal);
 
+let count9 = 0;
 function EEAlert(){
 	document.getElementById("EE1").className = "shown";
-	//document.getElementById("EE2").style.transition = "opacity 2500ms";
+    count9++; 
 	setTimeout(oneSecond, 10);
 }
 
@@ -264,9 +265,8 @@ function exitEE() {
 	document.getElementById("EE2").style.opacity = "0";
 	}
 
-	let count9 = 0;
 function reveal() {
-    count9++; 
+
 	document.getElementById("exitEE").classList.remove("hidden");
 	document.getElementById("reveal").className = "hidden";
 	document.getElementById("EEcopy").innerHTML = 
@@ -411,7 +411,7 @@ var loadFile = function(event) {
 }
 
 
-//Exit popup
+//Exit popup - 8 seconds after page load if EE has not been found
 let count10 = 0;
 setTimeout(startTimer, 8000)
 function startTimer() {
