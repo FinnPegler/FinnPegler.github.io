@@ -95,19 +95,22 @@ function pauseVid() {
 
 //Remove Overlay
 function removeOverlay() {
-	document.getElementById("videoheading").className = "hidden";
-	document.getElementById("videoheading2").className = "hidden";
+	document.getElementById("videoheading").className = "fadeout";
+	document.getElementById("videoheading2").className = "fadeout";
 	document.getElementById("removeoverlay").className = "hidden";
 	document.getElementById("removeoverlay2").className = "shown";
 	document.getElementById("video").style.opacity = "1";
-}
+	document.getElementById("video").style.transition = "opacity 2500ms";
+} 
+  
 
 function removeOverlay2() {
-	document.getElementById("videoheading").className = "shown";
-	document.getElementById("videoheading2").className = "shown";
+	document.getElementById("videoheading").className = "fadein";
+	document.getElementById("videoheading2").className = "fadein";
 	document.getElementById("removeoverlay").className = "shown";
 	document.getElementById("removeoverlay2").className = "hidden";
-	document.getElementById("video").style.opacity = ".65";
+	document.getElementById("video").style.opacity = ".6";
+	document.getElementById("video").style.transition = "opacity 2500ms";
 }
 
 
@@ -418,14 +421,14 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 5000)
+setTimeout(startTimer, 1000)
 function startTimer() {
 	count10 ++;
 }
 
 let count11 = 0;
 function onMouseOut(event) {
-if (event.clientY < 30 && count9 <1 && count10 >0 && count11 <1) {
+if (event.clientY < 15 && count9 <1 && count10 >0 && count11 <1) {
 	document.removeEventListener("mouseout", onMouseOut);
 	document.getElementById("overlay").className = "shown";
 	count11++;

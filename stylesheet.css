@@ -84,6 +84,15 @@ a:active {
   display: inherit;
 }
 
+.fadein {
+    opacity: 1;
+  transition: opacity 2000ms;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
 
 #overlay{
   position: fixed;
@@ -157,8 +166,8 @@ background-color: #f76c6c;
 
 #colourchange {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 25px;
+  top: 25px;
   background-color: #353535;
   width: 100px;
   padding: 12px;
@@ -278,9 +287,9 @@ display: none;
 }
 
 .navitem:hover {
-  flex-grow: 6;
+    flex-grow: 2;
+    transition: all .7s;
 }
-
 .nava {
   color: white !important;
 }
@@ -393,6 +402,7 @@ display: none;
   height: 230px;
   margin-bottom: 20px;
 }
+
 
 .boxcopy {
   font-weight: bold;
