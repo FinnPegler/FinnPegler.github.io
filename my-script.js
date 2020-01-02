@@ -261,7 +261,14 @@ document.getElementById("reveal").addEventListener("click", reveal);
 
 function EEAlert(){
 	document.getElementById("EE1").className = "shown";
+	//document.getElementById("EE2").style.transition = "opacity 2500ms";
+	setTimeout(oneSecond, 10);
 }
+
+function oneSecond() {
+	document.getElementById("EE2").style.opacity = "1";
+}
+
 
 function exitEE() {
 	document.getElementById("exitEE").className = "hidden";
@@ -270,6 +277,7 @@ function exitEE() {
 	"You have found the Easter Egg. Click the button to reveal a joke!";
 	document.getElementById("EEH").innerHTML = "Congratulations!";
 	document.getElementById("EE1").className = "hidden";
+	document.getElementById("EE2").style.opacity = "0";
 	}
 
 	let count9 = 0;
@@ -421,7 +429,7 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 10000)
+setTimeout(startTimer, 10)
 function startTimer() {
 	count10 ++;
 }
@@ -429,16 +437,21 @@ function startTimer() {
 let count11 = 0;
 function onMouseOut(event) {
 if (event.clientY < 15 && count9 <1 && count10 >0 && count11 <1) {
-	document.removeEventListener("mouseout", onMouseOut);
 	document.getElementById("overlay").className = "shown";
+	setTimeout(delayPopupOpacity, 100);
+	document.removeEventListener("mouseout", onMouseOut);
 	count11++;
 }
 else return null;
 }
 
-function exitpopup (){
+function delayPopupOpacity() {
+	document.getElementById("popup").style.opacity = "1";
+}
 
+function exitpopup (){
 document.getElementById("overlay").className = "hidden";
+document.getElementById("popup").style.opacity = "0";
 }
 
 
