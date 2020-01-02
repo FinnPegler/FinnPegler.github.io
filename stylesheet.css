@@ -285,12 +285,10 @@ display: none;
   font-size: 30px;
   line-height:46px;
   margin: 0px 5px 0px 5px;
-  flex-grow: 1;
 }
 
 .navitem:hover {
-    flex-grow: 2;
-    transition: all .7s;
+background: #faa4a4;
 }
 .nava {
   color: white !important;
@@ -689,10 +687,17 @@ display: none;
   cursor: pointer;
 }
 
+
 #removeoverlay2:hover,#removeoverlay:hover, #playvid:hover, #pausevid:hover, #exitEE:hover  {
   background-color: #faa4a4;
 }
 
+#colourpicker {
+  display: flex;
+  flex: wrap;
+  align-items: center;
+
+}
 
 #contact{
   display: flex;

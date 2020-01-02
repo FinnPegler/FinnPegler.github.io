@@ -458,3 +458,16 @@ document.getElementById("popup").style.opacity = "0";
 document.body.addEventListener("mouseout", onMouseOut);
 document.getElementById("exit").addEventListener("click", exitpopup);
 
+
+
+//Colour input
+let input = document.querySelector("#colourpicker input");
+input.addEventListener("change", changeColour);
+
+function changeColour() {
+    videoheading.style.setProperty("background-color", this.value);
+    videoheading2.style.setProperty("background-color", this.value);
+}
+
+/*input.addEventListener('change', changeColour);
+input.addEventListener('mousemove', changeColour);*/
