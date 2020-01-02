@@ -461,13 +461,11 @@ document.getElementById("exit").addEventListener("click", exitpopup);
 
 
 //Colour input
-let input = document.querySelector("#colourpicker input");
-input.addEventListener("change", changeColour);
+let input1 = document.querySelector("#colourpicker input");
+input1.addEventListener("change", changeColour1);
 
-function changeColour() {
+function changeColour1() {
     videoheading.style.setProperty("background-color", this.value);
     videoheading2.style.setProperty("background-color", this.value);
 }
 
-/*input.addEventListener('change', changeColour);
-input.addEventListener('mousemove', changeColour);*/
