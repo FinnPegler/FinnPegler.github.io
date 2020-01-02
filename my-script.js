@@ -429,7 +429,7 @@ var loadFile = function(event) {
 
 //Exit popup
 let count10 = 0;
-setTimeout(startTimer, 10)
+setTimeout(startTimer, 8000)
 function startTimer() {
 	count10 ++;
 }
