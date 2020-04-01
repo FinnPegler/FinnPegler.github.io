@@ -1,18 +1,33 @@
 :root {
-  --bgcolor: #f7e4e4;
-  --textcolor: #0044d6;
-  --darkbgcolor: #000000;
-  --darktextcolor: #0044d6;
+  --bgcolor1: #f7e4e4;
+  --bgcolor2: #2a2a2a;
+  --textcolor1: #0044d6;
+  --textcolor2: #F0F0F0;
 }
-
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bgcolor);
+  background-color: var(--bgcolor1);
   color: var(--textcolor);
   background-repeat: repeat;
   background-attachment: fixed;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+#darkmodebtn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  background-color: var(--bgcolor2);
+  width: 110px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--textcolor2);
+  margin: 5px 10px 5px 10px;
+  z-index: 2;
+  cursor: pointer;
 }
