@@ -65,11 +65,13 @@
   <h2 id = "carouselh2">Some Of My Favourite Space Images</h2>
 
     <div class = "container">
-        <div class = "bckbtn"><button class = "button1" id = bckbtn><iconify-icon data-icon="ic:round-keyboard-arrow-left" data-width="24" data-height="24"></iconify-icon></button></div>
+        <div class = "bckbtn"><button class = "button1" id = bckbtn>
+          <iconify-icon data-icon="ic:round-keyboard-arrow-left" data-width="24" data-height="24"></iconify-icon></button></div>
         <div id = "imgcontainer">
           <div id = "aspectratio">
               <img src="img1.jpg" id = "car-image"></div></div>
-        <div class = "fwdbtn"><button class = "button1" id = fwdbtn><iconify-icon data-icon="ic:round-keyboard-arrow-right" data-width="24" data-height="24"></iconify-icon></button></div>
+        <div class = "fwdbtn"><button class = "button1" id = fwdbtn>
+          <iconify-icon data-icon="ic:round-keyboard-arrow-right" data-width="24" data-height="24"></iconify-icon></button></div>
     </div>
 
   <div>
@@ -84,7 +86,10 @@
   </div>
 </div>
 
+<p id = "upload1"><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p id = "upload2"><label id = "label" for="file">Click Here To Upload Your Own Image To Carousel</label></p>
 
+<hr>
 
 </div>
 
