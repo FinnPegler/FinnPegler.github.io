@@ -6,14 +6,32 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--bgcolor1);
   color: var(--textcolor);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  color: var(--textcolor1);
+  font-size: 22px;
+}
+
+h1,h2,h3,h4 {
+  color: var(--textcolor1);
+  font-family: 'Bree Serif', serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 26px;
 }
 
 #darkmodebtn {
@@ -31,3 +49,73 @@ body {
   z-index: 2;
   cursor: pointer;
 }
+
+
+#column{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 13%;
+  margin-bottom: 8%;
+  z-index: 2;
+}
+
+
+#profile{
+	display: flex;
+	flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#profile img{
+	border-radius: 50%;
+  max-height: 50%;
+}
+
+#intro {
+  margin-right: 10px;
+  margin-left: 0px;
+  max-width: 550px;
+}
+
+#profileimg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#threeboxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#box1, #box2, #box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 235px; 
+  border-radius: 30px;
+  height: 230px;
+  margin-bottom: 20px;
+}
+
+#box1 {
+background-color: #f76c6c;
+}
+
+#box2 {
+  background-color: #4FAD7C;
+}
+
+#box3 {
+  background-color: #FFC857;
+}
+
