@@ -23,11 +23,10 @@ else {
 }
 
 
-
 //Hide and show icon in first column (Github)
 function hideIcon1() {
 	document.getElementById("icon1").className = "hidden";
-	document.getElementById("box1heading").className = "shown";
+	document.getElementById("box1heading").className = "boxcopy";
   
   }
   function showIcon1() {
@@ -41,7 +40,7 @@ function hideIcon1() {
   //Hide and show icon in second column (CodeWars)
   function hideIcon2() {
 	document.getElementById("icon2").className = "hidden";
-	document.getElementById("box2heading").className = "shown";
+	document.getElementById("box2heading").className = "boxcopy";
   }
   function showIcon2() {
 	document.getElementById("icon2").className = "shown";
@@ -54,7 +53,7 @@ function hideIcon1() {
   //Hide and show icon in first column (freeCodeCamp)
   function hideIcon3() {
 	document.getElementById("icon3").className = "hidden";
-	document.getElementById("box3heading").className = "shown";
+	document.getElementById("box3heading").className = "boxcopy";
   }
   function showIcon3() {
 	document.getElementById("icon3").className = "shown";

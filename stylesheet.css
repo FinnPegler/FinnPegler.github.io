@@ -1,13 +1,16 @@
 :root {
+  /*these four color variables change on Dark Mode button press*/
   --bgcolor1: #f7e4e4;
   --bgcolor2: #2a2a2a;
   --textcolor1: #0044d6;
   --textcolor2: #F0F0F0;
+  /*this color is constant*/
+  --textcolor: #0044d6;
 }
 
 body {
   background-color: var(--bgcolor1);
-  color: var(--textcolor);
+  color: var(--textcolor1);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -34,6 +37,11 @@ h3 {
   font-size: 26px;
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #4b60b4;
+}
+
 hr {
   margin: 60px 0px 60px 0px;
   border: 0;
@@ -49,7 +57,7 @@ hr {
 }
 
 .shown {
-  display: inherit;
+  display: inline;
 }
 
 #darkmodebtn {
@@ -138,5 +146,15 @@ background-color: #f76c6c;
 }
 
 .boxcopy {
-  color: #0044d6;
+  color: var(--textcolor)!important;
+  text-align: center;
 }
+
+#icon1, #icon2, #icon3 {
+  line-height: normal;
+  text-align: center;  
+ }
+
+ #icon2 {
+  margin-top: 12px;
+ }
