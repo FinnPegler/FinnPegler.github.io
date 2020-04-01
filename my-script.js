@@ -1,5 +1,6 @@
-document.getElementById("darkmodebtn").addEventListener("click", changeColour);
 
+//Dark mode switch function
+document.getElementById("darkmodebtn").addEventListener("click", changeColour);
 let count1 = 0;
 function changeColour() {
 	if (count1 < 1){
@@ -21,3 +22,43 @@ else {
 }
 }
 
+
+
+//Hide and show icon in first column (Github)
+function hideIcon1() {
+	document.getElementById("icon1").className = "hidden";
+	document.getElementById("box1heading").className = "shown";
+  
+  }
+  function showIcon1() {
+	document.getElementById("icon1").className = "shown";
+	document.getElementById("box1heading").className = "hidden";
+  }
+  document.getElementById("box1").addEventListener("mouseleave", hideIcon1);
+  document.getElementById("box1").addEventListener("mouseenter", showIcon1);
+  
+  
+  //Hide and show icon in second column (CodeWars)
+  function hideIcon2() {
+	document.getElementById("icon2").className = "hidden";
+	document.getElementById("box2heading").className = "shown";
+  }
+  function showIcon2() {
+	document.getElementById("icon2").className = "shown";
+	document.getElementById("box2heading").className = "hidden";
+  }
+  document.getElementById("box2").addEventListener("mouseleave", hideIcon2);
+  document.getElementById("box2").addEventListener("mouseenter", showIcon2);
+  
+  
+  //Hide and show icon in first column (freeCodeCamp)
+  function hideIcon3() {
+	document.getElementById("icon3").className = "hidden";
+	document.getElementById("box3heading").className = "shown";
+  }
+  function showIcon3() {
+	document.getElementById("icon3").className = "shown";
+	document.getElementById("box3heading").className = "hidden";
+  }
+  document.getElementById("box3").addEventListener("mouseleave", hideIcon3);
+  document.getElementById("box3").addEventListener("mouseenter", showIcon3);
