@@ -311,3 +311,257 @@ background-color: var(--pink);
 #label:hover {
   background-color: var(--lightpink);;
 }
+
+#videocontainer {
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+#video {
+  opacity: 0.65;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  max-width: 600px;  
+}
+
+#videoheading{
+  left: 10%;
+  top: 5%;
+  position: absolute;
+  background-color: var(--textcolor); 
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  z-index: 4;
+}
+
+#videoheading2{
+  left: 14%;
+  top: 17%;
+  position: absolute;
+  background-color: var(--textcolor);
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  z-index: 4;
+}
+
+@media only screen and (max-width: 350px) {
+  #videoheading, #videoheading2{
+   display: none;
+  }
+  }
+  
+  #pausevid {
+    background-color: var(--pink);
+    width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 10px 0px 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  
+  #playvid {
+    background-color: var(--pink);
+    width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 10px 0px 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #removeoverlay {
+    background-color: var(--pink);
+    width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 10px 0px 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #removeoverlay2 {
+    background-color: var(--pink);
+    width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 10px 0px 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  
+  #removeoverlay2:hover,#removeoverlay:hover, #playvid:hover, #pausevid:hover, #exitEE:hover, #alert:hover  {
+    background-color: var(--lightpink);
+  }
+
+  .fadein {
+    opacity: 1;
+  transition: opacity 2000ms;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
+  
+  #colourpicker {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+  }
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+
+  #email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contactcopy {
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 775px) {
+    .contactcopy {
+    font-size: 18px;
+  } 
+  }
+  
+  #EE1{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    }
+  
+  
+  #EE2 {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    background-color: #E1F0F7;
+    border-radius: 30px;
+    border: 3px solid grey;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity .7s;
+  }
+  
+  
+  #EEcopy{
+    color: #4b60b4;
+    font-size: 22px;
+    margin: 30px 30px 30px 30px;
+  }
+  
+  #exitEE {
+   position: absolute;
+   float:right; 
+   left: 360px;
+   top: 40px;
+   transform: translate(-50%, -50%);
+   vertical-align: top;
+   background-color: #f76c6c;
+   padding: 8px;
+   border-radius: 10px;
+   font-size: 14px;
+   font-weight: bold;
+   color: #ffffff;
+   cursor: pointer;
+  }
+  
+  #reveal {
+    background-color: #f76c6c;
+    width: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 10px 0px 10px;
+    cursor: pointer;
+  }
+  
+  #thanks{
+    max-width: 580px;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #alert {
+    background-color: #f76c6c;
+    width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 10px 0px 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #EE2 {
+      font-size: 18px;
+      width: 330px;
+      height: 300px;
+  }
+    #exitEE {
+   left: 290px;
+   top: 35px;
+  }
+}
+  
+
