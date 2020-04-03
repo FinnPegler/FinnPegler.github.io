@@ -45,7 +45,7 @@ h2 {
 h3 {
   font-family: 'Bree Serif', serif;
   font-size: 26px;
-  color: var(--textcolor);
+  color: var(--textcolor1);
   text-align: center;
   margin: 15px 0px 0px 0px;
 }
@@ -565,7 +565,7 @@ background-color: var(--pink);
   }
   
   #popupcopy{
-    color: (var(--textcolor1));
+    color: var(--textcolor);
     font-size: 22px;
   }
 
@@ -620,6 +620,10 @@ background-color: var(--pink);
    color: white;
   }
   
+  #popupheading, #EEH {
+    color: var(--textcolor);
+  }
+
   #reveal {
     background-color: var(--pink);
     width: 150px;

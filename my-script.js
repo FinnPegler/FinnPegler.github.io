@@ -335,7 +335,7 @@ function reveal() {
 
 //Exit popup - 5 seconds after page load if EE has not been found
 let count10 = 0;
-setTimeout(startTimer, 50000)
+setTimeout(startTimer, 5000)
 function startTimer() {
 	count10 ++;
 }
