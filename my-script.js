@@ -128,7 +128,7 @@ function changeImgFwd() {
 		  } 
 	}
 	
-//CArousel next and previous image buttons	
+//Carousel next and previous image buttons	
 document.getElementById("fwdbtn").addEventListener("click", changeImgFwd);
 document.getElementById("bckbtn").addEventListener("click", changeImgBck);
 	
@@ -224,7 +224,7 @@ function insertDelay(){
 document.onload = strDelay();
 document.onload = insertDelay();
 
-//button to stop animation
+//Button to stop animation
 var count5 = 0;
 var y = null;
 function stopInsertDelay(){
@@ -241,7 +241,7 @@ function changeVidButton2 () {
 	document.getElementById("pausevid").className = "shown";
 }
 
-//stop video on button press
+//Stop video on button press
 var vid = document.getElementById("video");
 
 function playVid() {
@@ -296,3 +296,77 @@ function changeColour1() {
     videoheading.style.setProperty("background-color", this.value);
     videoheading2.style.setProperty("background-color", this.value);
 }	
+
+//Easter Egg (EE)
+document.getElementById("profileimg").addEventListener("click", EEAlert);
+document.getElementById("exitEE").addEventListener("click", exitEE);
+document.getElementById("reveal").addEventListener("click", reveal);
+
+let count9 = 0;
+function EEAlert(){
+	document.getElementById("EE1").className = "shown";
+    count9++; 
+	setTimeout(oneSecond, 10);
+}
+
+function oneSecond() {
+	document.getElementById("EE2").style.opacity = "1";
+}
+
+function exitEE() {
+	document.getElementById("exitEE").className = "hidden";
+	document.getElementById("reveal").classList.remove("hidden");
+	document.getElementById("EEcopy").innerHTML = 
+	"You have found the Easter Egg. Click the button to reveal a joke!";
+	document.getElementById("EEH").innerHTML = "Congratulations!";
+	document.getElementById("EE1").className = "hidden";
+	document.getElementById("EE2").style.opacity = "0";
+	}
+
+function reveal() {
+
+	document.getElementById("exitEE").classList.remove("hidden");
+	document.getElementById("reveal").className = "hidden";
+	document.getElementById("EEcopy").innerHTML = 
+	"Newsflash: Programmer found dead in the shower with a bottle of"
+	+ " shampoo that says \"lather, rinse, repeat\".";
+	document.getElementById("EEH").innerHTML = "A Corny Joke";
+}
+
+//Exit popup - 5 seconds after page load if EE has not been found
+let count10 = 0;
+setTimeout(startTimer, 50000)
+function startTimer() {
+	count10 ++;
+}
+
+let count11 = 0;
+function onMouseOut(event) {
+if (event.clientY < 15 && count9 <1 && count10 >0 && count11 <1) {
+	document.getElementById("overlay").className = "shown";
+	setTimeout(delayPopupOpacity, 100);
+	document.removeEventListener("mouseout", onMouseOut);
+	count11++;
+}
+else return null;
+}
+
+function delayPopupOpacity() {
+	document.getElementById("popup").style.opacity = "1";
+}
+
+function exitpopup (){
+document.getElementById("overlay").className = "hidden";
+document.getElementById("popup").style.opacity = "0";
+}
+
+document.body.addEventListener("mouseout", onMouseOut);
+document.getElementById("exit").addEventListener("click", exitpopup);
+
+
+//Alert popup to list features
+document.getElementById("alert").addEventListener("click", featureAlert);
+
+function featureAlert() {
+	alert("Dark Mode Switch\nSide Navigation\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing word overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
+}

@@ -5,6 +5,7 @@
   --green: #4FAD7C;
   --yellow: #FFC857;
   --lightpink: #faa4a4;
+  --lightblue: #E1F0F7;
 
   /*these four color variables change on Dark Mode button press*/
   --bgcolor1: #f7e4e4;
@@ -23,9 +24,10 @@ body {
 p {
   color: var(--textcolor1);
   font-size: 22px;
+  margin: 0;
 }
 
-h1,h2,h3,h4 {
+h1,h2 {
   color: var(--textcolor1);
   font-family: 'Bree Serif', serif;
 }
@@ -37,19 +39,28 @@ h1 {
 h2 {
   font-size: 36px;
   text-align: center;
+  margin: 0px 0px 40px 0px;
 }
 
 h3 {
+  font-family: 'Bree Serif', serif;
   font-size: 26px;
+  color: var(--textcolor);
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+}
+
+button {
+  cursor: pointer;
 }
 
 a:link, a:visited, a:active {
   text-decoration: none;
-  color: #4b60b4;
+  color: var(--textcolor1)
 }
 
 hr {
-  margin: 60px 0px 60px 0px;
+  margin: 46px 0px 40px 0px;
   border: 0;
   clear:both;
   display:block;
@@ -79,9 +90,7 @@ hr {
   color: var(--textcolor2);
   margin: 5px 10px 5px 10px;
   z-index: 2;
-  cursor: pointer;
 }
-
 
 #column{
   display: flex;
@@ -190,7 +199,6 @@ background-color: var(--pink);
   padding-bottom: 65%
 }
 
-
 #car-image {
   position: absolute;
   top: 0;  bottom: 0;  left: 0;  right: 0;
@@ -207,8 +215,7 @@ background-color: var(--pink);
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: #ffffff;
-  cursor: pointer;
+  color: white;
 }
 
 #bckbtn {
@@ -247,7 +254,6 @@ background-color: var(--pink);
   width: 100px;
 	border-radius: 12px;
   margin: 20px 20px 0px 20px;
-  cursor: pointer;
 }
 
 #pausebtn{
@@ -256,7 +262,6 @@ background-color: var(--pink);
   border-radius: 12px;
   margin: 20px 20px 0px 20px;
   opacity: 0.2;
-  cursor: pointer;
 }
 
 #playbtn:hover {
@@ -366,10 +371,9 @@ background-color: var(--pink);
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 30px 10px 0px 10px;
     z-index: 2;
-    cursor: pointer;
   }
   
   
@@ -380,10 +384,9 @@ background-color: var(--pink);
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 30px 10px 0px 10px;
     z-index: 2;
-    cursor: pointer;
   }
   
   #removeoverlay {
@@ -393,10 +396,9 @@ background-color: var(--pink);
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 30px 10px 0px 10px;
     z-index: 2;
-    cursor: pointer;
   }
   
   #removeoverlay2 {
@@ -406,10 +408,9 @@ background-color: var(--pink);
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 30px 10px 0px 10px;
     z-index: 2;
-    cursor: pointer;
   }
   
   
@@ -431,6 +432,26 @@ background-color: var(--pink);
     display: flex;
     flex: wrap;
     align-items: center;
+    margin: 10px 0px 0px 0px;
+  }
+
+  #projecthead1, #projecthead3 {
+    text-align: left;
+  }
+  #projecthead2, #rightalign {
+    text-align: right;
+  }
+
+  #project1, #project2, #project3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 0px 80px 0px;
+  }
+
+  .icons{
+    margin: 20px;
+    width: 200px;
   }
 
   #contact{
@@ -462,6 +483,7 @@ background-color: var(--pink);
     font-size: 22px;
     align-items: center;
     justify-content: center;
+    margin: 20px 0px 0px 0px;
   }
   
   @media only screen and (max-width: 775px) {
@@ -470,6 +492,76 @@ background-color: var(--pink);
   } 
   }
   
+  #overlay{
+    position: fixed;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    }
+  
+  #popup {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    background-color: var(--lightblue);;
+    border-radius: 30px;
+    border: 3px solid grey;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.6s;
+  }
+  
+  #overlayexit{
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    }
+  
+  @media only screen and (max-width: 775px) {
+    #popup {
+      display: none;
+    }
+  
+    #overlay {
+      display: none;
+    }
+  }
+  
+  #exit {
+  background-color: var(--lightpink);
+    width: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  
+  #popupcontent {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+  }
+  
+  #popupcopy{
+    color: (var(--textcolor1));
+    font-size: 22px;
+  }
+
   #EE1{
     position: fixed;
     background: rgba(0, 0, 0, 0.75);
@@ -483,13 +575,14 @@ background-color: var(--pink);
   
   #EE2 {
     position: fixed;
+    text-align: center;
     z-index: 999;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     height: 250px;
-    background-color: #E1F0F7;
+    background-color: var(--lightblue);
     border-radius: 30px;
     border: 3px solid grey;
     font-size: 24px;
@@ -499,9 +592,10 @@ background-color: var(--pink);
   
   
   #EEcopy{
-    color: #4b60b4;
+    color: var(--textcolor);
     font-size: 22px;
     margin: 30px 30px 30px 30px;
+    text-align: center;
   }
   
   #exitEE {
@@ -511,25 +605,23 @@ background-color: var(--pink);
    top: 40px;
    transform: translate(-50%, -50%);
    vertical-align: top;
-   background-color: #f76c6c;
+   background-color: var(--pink);
    padding: 8px;
    border-radius: 10px;
    font-size: 14px;
    font-weight: bold;
-   color: #ffffff;
-   cursor: pointer;
+   color: white;
   }
   
   #reveal {
-    background-color: #f76c6c;
+    background-color: var(--pink);
     width: 150px;
     padding: 12px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 10px 10px 0px 10px;
-    cursor: pointer;
   }
   
   #thanks{
@@ -540,16 +632,15 @@ background-color: var(--pink);
   }
 
   #alert {
-    background-color: #f76c6c;
+    background-color: var(--pink);
     width: 180px;
     padding: 14px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     margin: 30px 10px 0px 10px;
     z-index: 2;
-    cursor: pointer;
   }
   
   @media only screen and (max-width: 400px) {
@@ -563,5 +654,3 @@ background-color: var(--pink);
    top: 35px;
   }
 }
-  
-
