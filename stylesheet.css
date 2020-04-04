@@ -77,6 +77,14 @@ hr {
   display: inline;
 }
 
+#banner {
+  background-image: url(bg.png);
+  background-repeat: repeat;
+  background;
+  height: 100vh;
+  width: 100vw;
+}
+
 #darkmodebtn {
   position: absolute;
   right: 25px;
@@ -96,13 +104,11 @@ hr {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  border-radius: 30px;
   margin: auto;
   margin-top: 13%;
   margin-bottom: 8%;
   z-index: 2;
 }
-
 
 #profile{
 	display: flex;
@@ -110,7 +116,9 @@ hr {
   justify-content: space-around;
   flex-wrap: wrap-reverse;
   align-items: center;
-  margin-bottom: 30px;
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
 }
 
 #profile img{
@@ -119,8 +127,7 @@ hr {
 }
 
 #intro {
-  margin-right: 10px;
-  margin-left: 0px;
+  margin-top: -45px;
   max-width: 550px;
 }
 
