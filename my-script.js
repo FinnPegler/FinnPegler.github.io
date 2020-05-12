@@ -9,6 +9,7 @@ function changeColour() {
 		document.documentElement.style.setProperty("--textcolor1", "#F0F0F0");
 		document.documentElement.style.setProperty("--textcolor2", "#0044d6");
 		document.getElementById("darkmodebtn").innerText = "Light Mode";
+		document.getElementById("banner").id = "darkbanner";
 		count1 += 1;
 }
 
@@ -18,6 +19,7 @@ else {
 	document.documentElement.style.setProperty("--textcolor2", "#F0F0F0");
 	document.documentElement.style.setProperty("--textcolor1", "#0044d6");
 	document.getElementById("darkmodebtn").innerText = "Dark Mode";
+	document.getElementById("darkbanner").id = "banner";
 	count1 -= 1
 }
 }
