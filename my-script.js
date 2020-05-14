@@ -370,5 +370,5 @@ document.getElementById("exit").addEventListener("click", exitpopup);
 document.getElementById("alert").addEventListener("click", featureAlert);
 
 function featureAlert() {
-	alert("Dark Mode Switch\nSide Navigation\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing word overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
+	alert("Dark Mode Switch\nGithub, CodeWars and freeCodeCamp icons displayed on hover\nCarousel with next, previous, play, pause and small progress icons\nUser upload of image to carousel\nVideo of website being created with changing word overlayed\nUser input to choose colour of overlay background\nExit intent popup\nThere is an Easter Egg hidden somewhere, you'll have to find it!")
 }
